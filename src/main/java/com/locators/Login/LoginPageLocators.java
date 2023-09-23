@@ -5,16 +5,15 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPageLocators {
 	
-	@FindBy(name="Email")
+	@FindBy(id="Email")
 	public WebElement email;
 	
-	@FindBy(name="Password")
+	@FindBy(id="Password")
 	public WebElement password;
 	
-	@FindBy(name="RememberMe")
+	@FindBy(id="RememberMe")
 	public WebElement RememberMe;
 	
-
 	@FindBy(xpath ="//input[@value=\"Log in\"]")
 	public WebElement loginBtn;
 	
