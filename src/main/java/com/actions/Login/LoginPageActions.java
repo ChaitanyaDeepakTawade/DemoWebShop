@@ -30,7 +30,8 @@ public class LoginPageActions {
 	}
 
 	public void ClickLogin() {
-		// TODO Auto-generated method stub
+		
+		objlocators.RememberMe.click();
 		objlocators.loginBtn.click();
 		
 	}
