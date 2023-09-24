@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 
 import com.utils.HelperClass;
 
@@ -53,29 +54,43 @@ public class RegisterPageActions {
 	}
 	public void clickRegister() {
 		objRegisterPageLocators.registerButton.click();
+
+		
+	
 	}
 	
 	public void assertMessage() {
-		
+		if(objRegisterPageLocators.emailWorning.getText().equals("Wrong email")) {
+			//Email is not registered.
+			Assert.assertEquals(objRegisterPageLocators.emailWorning.getText(), "Wrong email");
+			
+		}else if(objRegisterPageLocators.Message.getText().equals("Your registration completed")) {
 		 Assert.assertEquals(objRegisterPageLocators.Message.getText(), "Your registration completed");
+		}
+		//Clear Form for new Entry 
+		objRegisterPageLocators.fName.clear();
+		objRegisterPageLocators.lName.clear();
+		objRegisterPageLocators.Email.clear();
+		objRegisterPageLocators.Password.clear();
+		objRegisterPageLocators.confPassword.clear();
+		
+	
 	}
-	public void fillData() {
-		Properties properties = new Properties();
-        try {
-            FileInputStream fileInputStream = new FileInputStream("src/test/resources/Properties/RegisterData.properties");
-            properties.load(fileInputStream);
-            fileInputStream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-		  ;
-		this.selectGender(properties.getProperty("Gender"));
-		this.setFname(properties.getProperty("FName"));
-		this.setLname(properties.getProperty("LName"));
-		this.setEmail(properties.getProperty("email"));
-		this.Password(properties.getProperty("Password"));
-		this.confPassword(properties.getProperty("ConfPassword"));
+	
+	public void fillData(String Gender, String FName,String LName, String email, String Password,String ConfPassword) {
+		
+		this.selectGender(Gender);
+		this.setFname(FName);
+		this.setLname(LName);
+		this.setEmail(email);
+		this.Password(Password);
+		this.confPassword(ConfPassword);
+		this.clickRegister();
+		this.assertMessage();
 		
 	}
+	
+
+
 
 }

@@ -7,5 +7,8 @@ Feature: Validate Registor Page
   Scenario: Validate Registor Page
     Given Open This URL "https://demowebshop.tricentis.com/register"
     When Fill out the registration form
+     | gender               | fname   | lname | email | passowrd | confPassword |
+       | M    | chaitanya | tawade | Exampale12345l.com | 123456 | 123456 |
+       | M    | chaitanya | tawade | Exampale12345@gmail.com | 123456 | 123456 |
     And Click Register button
     Then Validate whether user is registered successfully

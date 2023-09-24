@@ -37,6 +37,7 @@ public class ForgetPasswordAction {
 	}
 	
 	public void assertMessage() {
+		
 		if(objLocators.Message.getText().equals("Email not found.")) {
 			//Email is not registered.
 			Assert.assertEquals(objLocators.Message.getText(), "Email not found.");
