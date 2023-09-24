@@ -20,6 +20,9 @@ public class RegisterPageLocators {
 	@FindBy(name="Email")
 	public WebElement Email;
 	
+	@FindBy(xpath="//input[@name=\"Email\"]/following::span[@data-valmsg-for=\"Email\"]")
+	public WebElement emailWorning;
+	
 	@FindBy(name="Password")
 	public WebElement Password;
 	
