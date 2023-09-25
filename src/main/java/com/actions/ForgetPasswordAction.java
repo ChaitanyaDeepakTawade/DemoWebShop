@@ -1,10 +1,10 @@
-package com.actions.Login;
+package com.actions;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.locators.Login.ForgetPasswordLocators;
-import com.locators.Login.LoginPageLocators;
+import com.locators.ForgetPasswordLocators;
+import com.locators.LoginPageLocators;
 import com.utils.HelperClass;
 
 public class ForgetPasswordAction {

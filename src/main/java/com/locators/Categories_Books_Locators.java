@@ -1,4 +1,4 @@
-package com.locators.Categories_Books;
+package com.locators;
 
 public class Categories_Books_Locators {
 

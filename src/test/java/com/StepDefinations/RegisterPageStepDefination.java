@@ -4,8 +4,8 @@ package com.StepDefinations;
 
 import java.util.List;
 
-import com.actions.Login.LoginPageActions;
-import com.actions.Registration.RegisterPageActions;
+import com.actions.LoginPageActions;
+import com.actions.RegisterPageActions;
 import com.utils.HelperClass;
 
 
