@@ -1,9 +1,9 @@
-package com.actions.Login;
+package com.actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.utils.HelperClass;
-import com.locators.Login.LoginPageLocators;
+import com.locators.LoginPageLocators;
 
 public class LoginPageActions {
 	

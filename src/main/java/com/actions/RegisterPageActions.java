@@ -1,4 +1,4 @@
-package com.actions.Registration;
+package com.actions;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import org.testng.annotations.DataProvider;
 
 import com.utils.HelperClass;
 
-import com.locators.Registration.RegisterPageLocators;
+import com.locators.RegisterPageLocators;
 import org.testng.Assert;
 public class RegisterPageActions {
 	RegisterPageLocators objRegisterPageLocators;

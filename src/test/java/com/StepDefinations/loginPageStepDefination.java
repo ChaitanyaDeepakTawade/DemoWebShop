@@ -5,7 +5,7 @@ import java.util.List;
 import org.testng.Assert;
 
 import com.utils.HelperClass;
-import com.actions.Login.LoginPageActions;
+import com.actions.LoginPageActions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

@@ -2,8 +2,8 @@ package com.StepDefinations;
 
 import java.util.List;
 
-import com.actions.Login.ForgetPasswordAction;
-import com.actions.Login.LoginPageActions;
+import com.actions.ForgetPasswordAction;
+import com.actions.LoginPageActions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

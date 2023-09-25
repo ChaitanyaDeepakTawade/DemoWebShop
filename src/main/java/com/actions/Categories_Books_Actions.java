@@ -1,4 +1,4 @@
-package com.actions.Categories_Books;
+package com.actions;
 
 public class Categories_Books_Actions {
 
