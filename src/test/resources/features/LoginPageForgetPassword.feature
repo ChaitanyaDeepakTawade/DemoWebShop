@@ -8,9 +8,7 @@ Feature: Forget Password using Email
     When click forget password link
     When enter email address
        | email |
-      | ff |
       | chaitanyatawade@gamil.com|
-      | cta@gmail.com |
     And click Recover button
     Then Assert Message
 
