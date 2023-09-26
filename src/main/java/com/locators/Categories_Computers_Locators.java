@@ -20,28 +20,32 @@ import org.openqa.selenium.support.FindBy;
 	    @FindBy(xpath = "//span[@class='price actual-price' and text()='800.00']")
 	    public WebElement itemPrice2;
 	    
-	    @FindBy(xpath = "//a[@href=\"/computers\" and normalize-space(.)=\"Computers\"]")
+	    //Scenario Second
+	    
+	    @FindBy(xpath = "//a[@href=\"/computers\"]")
 	    public WebElement clickOnDesktop1;
 	    
-	    @FindBy(xpath = "//a[@href=\"/accessories\" and normalize-space(.)=\"Accessories\"]")
+	    @FindBy(xpath = "//a[@href=\"/accessories\" and @title=\"Show products in category Accessories\"]")
 	    public WebElement accessories1;
 
-	    @FindBy(xpath = "//option[@value=\"https://demowebshop.tricentis.com/accessories?pagesize=4\" and text()=\"4\"]")
-	    public WebElement displaySize;
+	    @FindBy(xpath = "//*[@id=\"products-pagesize\"]")
+	    public WebElement displaysortby1;
 
-	    @FindBy(xpath = "//span[text()='Display']")
-	    public WebElement displayVerify;
+	    @FindBy(xpath = "//div[@class='product-grid'][count(.//div[@class='product-item']) = 4]")
+	    public WebElement assert4products;
 	    
-	    @FindBy(xpath = "//a[@href=\"/computers\" and normalize-space(.)=\"Computers\"]")
+	    
+	    //Third scenario for accessories
+	    @FindBy(xpath = "//a[@href=\"/computers\"]")
 	    public WebElement clickOnDesktop2;
 	    
-	    @FindBy(xpath = "//a[@href=\"/accessories\" and normalize-space(.)=\"Accessories\"]")
+	    @FindBy(xpath = "//a[@href=\"/accessories\" and @title=\"Show products in category Accessories\"]")
 	    public WebElement accessories2;
 
-	    @FindBy(xpath = "//*[@id=\"products-pagesize\"]")
+	    @FindBy(xpath = "//select[@id='products-pagesize']")
 	    public WebElement displaySize2;
 
-	    @FindBy(xpath = "//span[text()='Display']")
+	    @FindBy(xpath = "//div[@class='product-grid']")
 	    public WebElement displayVerify2;
 
 }

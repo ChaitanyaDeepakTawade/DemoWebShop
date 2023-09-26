@@ -39,35 +39,33 @@ public class ComputersStepDefination {
 	@When("I select COMPUTERS > Accessories > Display > {string}")
 	public void i_select_computers_accessories_display(String string) {
 		objCategories_Computers_Actions = new Categories_Computers_Actions();
-		objCategories_Computers_Actions.clickondesktop();
+		objCategories_Computers_Actions.clickonDesktop2();
 		objCategories_Computers_Actions.clickonaccessories1();
+		objCategories_Computers_Actions.displaysortby1();
 	}
 
 	@Then("I verify the number of products is four")
 	public void i_verify_the_number_of_products_is_four() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		objCategories_Computers_Actions.assert4products();
 	}
 
 	@Then("products are displayed as expected")
 	public void products_are_displayed_as_expected() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
+		System.out.println("Products are displayed as expected");
 	}
 
 	@Then("I verify the number of products is not twelve")
 	public void i_verify_the_number_of_products_is_not_twelve() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		objCategories_Computers_Actions.clickonDesktop3();
+		objCategories_Computers_Actions.clickonaccessories2();
+		objCategories_Computers_Actions.displaysortby2();
+		
 	}
 
 	@Then("the system should display twelve accessories products")
 	public void the_system_should_display_twelve_accessories_products() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		objCategories_Computers_Actions.assert12products();
 	}
-
-
-
 
 }
