@@ -40,14 +40,14 @@ Feature: Customer Service Features
 
   @CompareProducts
   Scenario: Compare Products List
-    Given I have added products to the compare list on the website
+    Given I already have added products to the compare list on the website
     When I scroll down to footers
     And I click on Compare Products List
     Then I should see the list of products added for comparison on the webpage
 
   @NewProducts
   Scenario: New Products
-    Given I am on the New Products webpage
+    Given I am on the webpage
     When I scroll down to footers
     And I click on New Products
     Then I should see the latest products added to the website in the New Products section
