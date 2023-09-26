@@ -38,9 +38,10 @@ Given user should be on " https://demowebshop.tricentis.com/"
     Then validate About us Page is Open or not 
   
   @Footer_Information_Contactus
-  Scenario: About us Page opening
+  Scenario: Contact us Page opening
     Given Scroll Down to footer
     When click Contact us Link
+    And Enter Data in Contactus form
     Then validate Contact us Page is Open or not 
     
   

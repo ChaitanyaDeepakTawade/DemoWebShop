@@ -4,7 +4,6 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HelperClass {
@@ -13,11 +12,9 @@ public class HelperClass {
 	public final static int TIMEOUT =5;
 	
 	public HelperClass(){
-		ChromeOptions options= new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMEOUT));
 	}
 	
 	public static void openPage(String url) {
@@ -30,7 +27,7 @@ public class HelperClass {
 		
 	}
 	public static void setUpDriver() {
-		if(helperclass==null) {
+		if(driver==null) {
 			helperclass =new HelperClass();
 		}
 	}
