@@ -9,7 +9,7 @@ import com.utils.HelperClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Footer_Information_ShippingAndReturns {
+public class Footer_Information_ShippingAndReturns_StepDefinations {
 
 	Footer_Information_ShippingAndReturns_Actions objShippingAndReturns;
 @When("click Shipping & Returns Link")

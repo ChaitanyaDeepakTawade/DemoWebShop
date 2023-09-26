@@ -9,7 +9,7 @@ import com.utils.HelperClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Footer_Information_Sitemap {
+public class Footer_Information_Sitemap_StepDefinations {
     
 	Footer_Information_Sitemap_Actions objSitemapActions;
 	@When("click Sitemap Link")
@@ -20,6 +20,8 @@ public class Footer_Information_Sitemap {
 
 	@Then("validate Sitemap Page is Open or not")
 	public void validate_sitemap_page_is_open_or_not() {
+		
 	    Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/sitemap");
+	
 	}
 }

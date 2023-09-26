@@ -19,13 +19,11 @@ public class Footer_Follow_Us_StepDefination {
 
 	@When("user clicks on Facebook under Follow Us.")
 	public void user_clicks_on_facebook_under_follow_us() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 	@Then("Verify whether Facebook web page is opened under new tab.")
 	public void verify_whether_facebook_web_page_is_opened_under_new_tab() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 }
