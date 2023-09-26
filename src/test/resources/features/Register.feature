@@ -3,8 +3,8 @@
 #This feature file for validate Register Page
 Feature: Validate Registor Page
 
-  @tag1
-  Scenario: Validate Registor Page
+  @RegistrationModule
+  Scenario Outline: Validate Registor Page
     Given Open This URL "https://demowebshop.tricentis.com/register"
     When Fill out the registration form
      | gender               | fname   | lname | email | passowrd | confPassword |
