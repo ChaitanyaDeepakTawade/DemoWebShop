@@ -8,7 +8,7 @@ import com.utils.HelperClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Footer_Information {
+public class Footer_Information_StepDefination {
     
 	Footer_Information_Actions objActions;
 	@When("click Sitemap Link")
@@ -19,9 +19,7 @@ public class Footer_Information {
 
 	@Then("validate Sitemap Page is Open or not")
 	public void validate_sitemap_page_is_open_or_not() {
-		
-	    Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/sitemap");
-	
+		objActions.assert_Sitemap();	
 	}
 	
 	@When("click Shipping & Returns Link")
@@ -32,7 +30,7 @@ public class Footer_Information {
 
 	@Then("validate Shipping & Returns Page is Open or not")
 	public void validate_shipping_returns_page_is_open_or_not() {
-	    Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/shipping-returns");
+		objActions.assert_ShippingAndReturns();
 
 	}
 	@When("click Privacy Notice Link")
@@ -45,9 +43,7 @@ public class Footer_Information {
 
 	@Then("validate Privacy Notice Page is Open or not")
 	public void validate_privacy_notice_page_is_open_or_not() {
-		
-		 Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/privacy-policy");
-	
+		 objActions.assert_PrivacyNotice();	
 	}
 	@When("click Contact us Link")
 	public void click_contact_us_link() {
@@ -57,7 +53,8 @@ public class Footer_Information {
 
 	@Then("validate Contact us Page is Open or not")
 	public void validate_contact_us_page_is_open_or_not() {
-		Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/contactus");
+		objActions.assert_ContactUs();
+		
 	}
 	
 	@When("click Conditions of Use Link")
@@ -68,7 +65,7 @@ public class Footer_Information {
 
 	@Then("validate Conditions of Use Page is Open or not")
 	public void validate_conditions_of_use_page_is_open_or_not() {
-		 Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/conditions-of-use");
+		objActions.assert_ConditionsofUse();
 	}
 	
 	@When("click About us Link")
@@ -76,11 +73,17 @@ public class Footer_Information {
 		objActions = new Footer_Information_Actions();
 		objActions.click_AboutUs();
 	}
+	
+
+	@When("Enter Data in Contactus form")
+	public void enter_data_in_contactus_form() {
+
+		
+	}
 
 	@Then("validate About us Page is Open or not")
 	public void validate_about_us_page_is_open_or_not() {
-		Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/about-us");
-
+		objActions.assert_AboutUs();
 	}
 
 	
