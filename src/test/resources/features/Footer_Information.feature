@@ -5,7 +5,7 @@
 Feature: Verifing footer informations links working or not
 
 Background:
-Given user should be on " https://demowebshop.tricentis.com/" 
+Given user should be on "https://demowebshop.tricentis.com/" 
 
   @Footer_Information_Module_Sitemap
   Scenario: Sitemap Page opening

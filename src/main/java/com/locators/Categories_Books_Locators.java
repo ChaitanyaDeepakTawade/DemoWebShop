@@ -29,4 +29,5 @@ public class Categories_Books_Locators {
 	
 	@FindBy(xpath="//span[@class=\"price actual-price\"]")
 	public List<WebElement> Sort; //Use for Sorting
+	
 }

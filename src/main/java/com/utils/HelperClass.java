@@ -27,7 +27,7 @@ public class HelperClass {
 		
 	}
 	public static void setUpDriver() {
-		if(driver==null) {
+		if(helperclass==null) {
 			helperclass =new HelperClass();
 		}
 	}
