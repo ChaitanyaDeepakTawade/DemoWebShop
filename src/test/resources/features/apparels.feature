@@ -2,7 +2,11 @@
 Feature: Send Product to Friend via Email
 
   Background:
-    Given I am on the website "https://demowebshop.tricentis.com/"
+   Given user should be on " https://demowebshop.tricentis.com/login"
+    When enter
+       | email               | password   |
+      | Exampale123456@gmail.com    | 123456 |
+    And click Login button
 
   Scenario: Send Green and Blue Sneaker to Friend via Email
     When I select APPAREL & SHOES > Green and blue Sneaker > Email to Friend

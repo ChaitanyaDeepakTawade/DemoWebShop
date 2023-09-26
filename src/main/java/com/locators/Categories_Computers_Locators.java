@@ -21,7 +21,6 @@ import org.openqa.selenium.support.FindBy;
 	    public WebElement itemPrice2;
 	    
 	    //Scenario Second
-	    
 	    @FindBy(xpath = "//a[@href=\"/computers\"]")
 	    public WebElement clickOnDesktop1;
 	    
