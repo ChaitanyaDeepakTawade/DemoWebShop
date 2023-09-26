@@ -15,8 +15,7 @@ public class Category_Books_StepDefination {
 
 	@When("select book option from nav bar")
 	public void select_book_option_from_nav_bar() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 	@When("select sort by Price Low to High")
