@@ -9,11 +9,12 @@ public class LoginPageActions {
 	
 	LoginPageLocators objlocators;
 	
+	
 	public LoginPageActions() {
 		
 		this.objlocators =new LoginPageLocators();
 		
-		PageFactory.initElements(HelperClass.getDriver(), objlocators );
+		PageFactory.initElements(HelperClass.getDriver(), objlocators);
 		
 	}
 	
@@ -36,12 +37,11 @@ public class LoginPageActions {
 		
 	}
 	public void AssertMessage(String email) {
-		// TODO Auto-generated method stub
 		 Assert.assertEquals(objlocators.Message.getText(),email);
 		
 	}
 	public void AssertMessageNegative() {
-		// TODO Auto-generated method stub
+
 		 Assert.assertNotEquals(objlocators.MessageNeg.getText(), "Login was unsuccessful. Please correct the errors and try again.");
 		
 	}

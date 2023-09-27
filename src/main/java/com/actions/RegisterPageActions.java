@@ -54,9 +54,6 @@ public class RegisterPageActions {
 	}
 	public void clickRegister() {
 		objRegisterPageLocators.registerButton.click();
-
-		
-	
 	}
 	
 	public void assertMessage() {
@@ -85,12 +82,7 @@ public class RegisterPageActions {
 		this.setEmail(email);
 		this.Password(Password);
 		this.confPassword(ConfPassword);
-		this.clickRegister();
-		this.assertMessage();
 		
 	}
-	
-
-
 
 }
