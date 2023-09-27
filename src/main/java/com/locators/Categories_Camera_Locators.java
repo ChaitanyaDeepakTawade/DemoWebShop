@@ -9,22 +9,22 @@ public class Categories_Camera_Locators {
 	@FindBy(xpath = "//a[@href=\"/electronics\"]")
 	public WebElement ElectronicsTab;
 	
-	@FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[1]/div/h2/a")
+	@FindBy(xpath = "//a[@href=\"/camera-photo\" and @title=\"Show products in category Camera, photo\"]")
 	public WebElement CameraPhotoOption;
 	
-	@FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[1]/h1")
+	@FindBy(xpath = "//h1[text()='Camera, photo']")
 	public WebElement AssertCameraPage;
 	
-	@FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[1]/div/div[2]/h2/a")
+	@FindBy(xpath = "//a[text()='1MP 60GB Hard Drive Handycam Camcorder']")
 	public WebElement ClickFirstCamera;
 	
-	@FindBy(xpath = "//*[@id=\"product-details-form\"]/div/div[1]/div[2]/div[8]/input")
+	@FindBy(xpath = "//input[@type='button' and @value='Add to compare list']")
 	public WebElement AddFirstCameratoCompare;
 	
 	@FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[1]/div[1]/div[2]/ul/li[3]/a")
 	public WebElement ClickElectronicsAgain;
 	
-	@FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[1]/div[1]/div[2]/ul/li[3]/ul/li[1]/a")
+	@FindBy(xpath = "//a[@href='/camera-photo' and @title='Show products in category Camera, photo']")
 	public WebElement ClickCameraPhotoOptionAgain;
 	
 	@FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[2]/div/div[2]/h2/a")

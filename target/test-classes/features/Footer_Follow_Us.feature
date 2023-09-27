@@ -19,10 +19,29 @@ Feature: Add to compare functionality for camera, photo section in electronics t
     And click Login button
 		
   
-  Scenario: Navigate to camera, photo section in electronics tab.
-    Given User is on demo web shop main page
-    And user scrolls down on webpage to the bottom.
-    When user clicks on Facebook under Follow Us.
-    Then Verify whether Facebook web page is opened under new tab.
-    
+  @Footer_Follow_Us_Facebook
+
+  Scenario: Open Facebook page
+
+    Given Scroll Down to footer
+
+    When click Facebook link
+
+    Then validate Facebook Page is Open or not
+
+ 
+
+  @Footer_Follow_Us_Twitter
+
+  Scenario: Open Twitter page
+
+    Given Scroll Down to footer
+
+    When click Twitter link
+
+    Then validate Twitter Page is Open or not
+
+  
+
+  
     

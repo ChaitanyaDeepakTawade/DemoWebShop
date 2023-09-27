@@ -9,7 +9,7 @@ public class Categories_Camera_Actions {
      
 	Categories_Camera_Locators categories_Camera_Locators;
 	//Linking Action to Locators
-	public Categories_Camera_Actions() {
+		public Categories_Camera_Actions() {
 
 			categories_Camera_Locators = new Categories_Camera_Locators();
 			PageFactory.initElements(HelperClass.getDriver(), categories_Camera_Locators);
@@ -74,5 +74,6 @@ public class Categories_Camera_Actions {
         	return categories_Camera_Locators.AssertCompare.getText();
 
         }
+        
 	}
 

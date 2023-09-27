@@ -1,9 +1,28 @@
 package com.actions;
 
+import org.openqa.selenium.support.PageFactory;
+
+import com.locators.Categories_Camera_Locators;
+import com.locators.Footer_Follow_Us_Locators;
+import com.utils.HelperClass;
+
 public class Footer_Follow_Us_Actions {
 	
-	public void ScrollToTheBottom() {
-    	
+	Footer_Follow_Us_Locators follow_us_locators;
+	
+	//Linking Action to Locators
+		public Footer_Follow_Us_Actions() {
 
-    }
+			follow_us_locators = new Footer_Follow_Us_Locators();
+			PageFactory.initElements(HelperClass.getDriver(), follow_us_locators);
+			
+		}
+		
+		public void ElectronicsTabClick() {
+        	
+			Footer_Follow_Us_Locators.FacebookLink.click();
+
+        }
+		
+		
 }
