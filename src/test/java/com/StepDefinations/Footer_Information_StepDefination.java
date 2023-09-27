@@ -11,6 +11,11 @@ import com.utils.HelperClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+/*
+ * This File for Footer Information section.
+ * @author chaitanya Deepk Tawade(expleo Pune)
+ * @sign 25/09/2023 
+*/
 public class Footer_Information_StepDefination {
     
 	Footer_Information_Actions objActions;

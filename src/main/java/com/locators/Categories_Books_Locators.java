@@ -9,7 +9,11 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.ui.Select;
 
 import com.utils.HelperClass;
-
+/*
+ * Categories Books Locators
+ * @author chaitanya Deepk Tawade(expleo Pune)
+ * @sign 24/09/2023 
+*/
 public class Categories_Books_Locators {
 	
 	@FindBy(xpath="//*[@class=\"account\"]")

@@ -1,7 +1,7 @@
 #Author: chaitanya tawade(expleo pune).
 #sign : 23/09/2023
 #This feature file for forget password page .
-
+@ForgetPassword
 Feature: Forget Password using Email
   Scenario Outline: Forget Password With Email 
     Given user should be on " https://demowebshop.tricentis.com/login"

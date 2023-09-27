@@ -1,6 +1,7 @@
 #Author: Chaitanya Tawade (expleo pune)
 #sign:23/09/2023
 #This feature file for validate Register Page
+@RegistrationPage
 Feature: Validate Registor Page
 
   @RegistrationModule

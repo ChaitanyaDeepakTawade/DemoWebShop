@@ -1,10 +1,7 @@
 package com.StepDefinations;
 
-
-
 import java.util.List;
 
-import com.actions.LoginPageActions;
 import com.actions.RegisterPageActions;
 import com.utils.HelperClass;
 
@@ -13,7 +10,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class RegisterPageStepDefination {
+/*
+ * This StepDefination file for Registration Page feature.
+ * @author chaitanya Deepk Tawade(expleo Pune)
+ * @sign 23/09/2023 
+*/
+
+public class RegisterPageStepDefinition {
 	RegisterPageActions objRegisterPageActions;
 	@Given("Open This URL {string}")
 	public void open_url(String url) {

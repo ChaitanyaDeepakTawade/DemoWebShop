@@ -1,7 +1,7 @@
 #Author: chaitanya tawade(expleo pune).
 #sign : 23/09/2023
 #This feature file for validate login page with Positive & Negative Test Data.
-
+@LoginPage
 Feature: Login Page Validatiion With Positive Negative credential 
   @Positive
   Scenario Outline: login with valid credentials

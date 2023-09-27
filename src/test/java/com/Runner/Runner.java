@@ -13,7 +13,9 @@ public class Runner {
 	
 
 	@CucumberOptions(
-			features = {"src/test/resources/features/Register.feature","src/test/resources/features/loginPage.feature","src/test/resources/features/LoginPageForgetPassword.feature"},
+			features = {"src/test/resources/features/Register.feature",
+					"src/test/resources/features/loginPage.feature",
+					"src/test/resources/features/LoginPageForgetPassword.feature"},
 			glue = "com.StepDefinations",
 			plugin = {"pretty","html:target/cucumber-reports","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 	)
