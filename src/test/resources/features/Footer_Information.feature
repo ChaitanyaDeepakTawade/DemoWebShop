@@ -41,7 +41,9 @@ Given user should be on "https://demowebshop.tricentis.com/"
   Scenario: Contact us Page opening
     Given Scroll Down to footer
     When click Contact us Link
-    And Enter Data in Contactus form
+    And Enter Data in Contactus form "<SheetName>" and <Rownumber>
     Then validate Contact us Page is Open or not 
-    
+     Examples: 
+      | SheetName          | Rownumber | 
+      | ContactUsData      |     0     |
   
