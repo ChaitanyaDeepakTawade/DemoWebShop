@@ -1,5 +1,7 @@
 package com.actions;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 
@@ -21,6 +23,8 @@ ShoppingCartLocators shoppingcartlocators;
 	
 	public void selectJewelry() {
 		shoppingcartlocators.SelectJewelry.click();
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+
 	}
 	
 	public void addToCart() {
@@ -28,6 +32,7 @@ ShoppingCartLocators shoppingcartlocators;
 	}
 	
 	public void goToCart() {
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		shoppingcartlocators.ShoppingCart.click();
 	}
 	
