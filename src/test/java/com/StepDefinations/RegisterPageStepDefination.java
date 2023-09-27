@@ -14,40 +14,42 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class RegisterPageStepDefination {
-	RegisterPageActions obj=new RegisterPageActions();
+	RegisterPageActions objRegisterPageActions;
 	@Given("Open This URL {string}")
 	public void open_url(String url) {
-	System.out.println(url);
-	   HelperClass.openPage(url);         
+	   HelperClass.openPage(url);   
+	   
 	}
 
 	@When("Fill out the registration form")
 	public void fill_out_the_registration_form(io.cucumber.datatable.DataTable dataTable) {
-		
+		objRegisterPageActions=new RegisterPageActions();
 		List<List<String>> data = dataTable.cells();
 		int rows = dataTable.height();
-		 for (int i=0; i< rows ; i++) {
-			 String Gender = data.get(1).get(0);
-			 String FName = data.get(1).get(1);
-			 String LName = data.get(1).get(2);
-			 String email = data.get(1).get(2);
-			 String Password =data.get(1).get(2);
-			 String ConfPassword =data.get(1).get(2);
-			 obj.fillData(Gender, FName ,LName , email, Password, ConfPassword);
+		 for (int i=1; i< rows ; i++) {
+			 String Gender = data.get(i).get(0);
+			 String FName = data.get(i).get(1);
+			 String LName = data.get(i).get(2);
+			 String email = data.get(i).get(3);
+			 String Password =data.get(i).get(4);
+			 String ConfPassword =data.get(i).get(5);
+			 objRegisterPageActions.fillData(Gender, FName ,LName , email, Password, ConfPassword);
+			 click_register_button();
+			 validate_whether_user_is_registered_successfully();
 		 }
 	}
 
 	@When("Click Register button")
 	public void click_register_button() {
 		
-		//obj.clickRegister();
+		    objRegisterPageActions.clickRegister();
 		
 	}
 
 	@Then("Validate whether user is registered successfully")
 	public void validate_whether_user_is_registered_successfully() {
 	
-		//obj.assertMessage();
+		objRegisterPageActions.assertMessage();
 		
 	}
 
