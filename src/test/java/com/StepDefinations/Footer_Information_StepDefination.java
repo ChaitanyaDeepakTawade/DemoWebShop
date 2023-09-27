@@ -1,5 +1,8 @@
 package com.StepDefinations;
 
+import java.io.IOException;
+
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 
 import com.actions.Footer_Information_Actions;
@@ -73,12 +76,18 @@ public class Footer_Information_StepDefination {
 		objActions = new Footer_Information_Actions();
 		objActions.click_AboutUs();
 	}
-	
 
-	@When("Enter Data in Contactus form")
-	public void enter_data_in_contactus_form() {
-
+	@When("Enter Data in Contactus form {string} and {int}")
+	public void enter_data_in_contactus_form_and(String sheetname, Integer rownumber) 
+	{
 		
+		try {
+			objActions.ContactUsForm(sheetname,rownumber);
+		} catch (InvalidFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Then("validate About us Page is Open or not")

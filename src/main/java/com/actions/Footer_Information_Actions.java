@@ -2,9 +2,12 @@ package com.actions;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -12,6 +15,10 @@ import org.testng.annotations.Test;
 
 import com.locators.Footer_Information_Locators;
 import com.utils.HelperClass;
+
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
 
 
 public class Footer_Information_Actions {
@@ -104,13 +111,19 @@ public class Footer_Information_Actions {
 			log.error("Error Occured.. Page is not opened");
 		}
 	}
-   // @Test(dataProvider = "datapro")
-    public void ContactUsForm() {
+    public void ContactUsForm(String sheetname, Integer rownumber) throws InvalidFormatException, IOException {
     	
-    	System.out.println();
-    	
-    	
+    ExcelReader excelReader = new ExcelReader();
+
+		List<Map<String,String>> ContactUsData =excelReader.getData("src/main/java/com/TestingData/ContactUsData.xls", sheetname);
+		objFooterInfoLocators.fullName.sendKeys(ContactUsData.get(rownumber).get("name"));
+		objFooterInfoLocators.email.sendKeys(ContactUsData.get(rownumber).get("email"));
+		objFooterInfoLocators.enquiry.sendKeys(ContactUsData.get(rownumber).get("enquiry"));
+		objFooterInfoLocators.submit.submit();
     }
+    
+    public void 
+    
 	public void click_ConditionsofUse() {
 		log.info("------------Openeing Conditions of Use Page----------------");
 		objFooterInfoLocators.ConditionsofUse.click();
@@ -126,33 +139,5 @@ public class Footer_Information_Actions {
 			log.error("Error Occured.. Page is not opened");
 		}
 	}
-//	@DataProvider(name="datapro")
-//	String[][] credential() throws BiffException, IOException
-//	{   
-//		String[][] data = readExcel();
-//		return data;
-//	}
-//	
-//    String[][] readExcel() throws BiffException, IOException
-//
-//    {    //input stream object creation
-//        FileInputStream excel= new FileInputStream("src/main/java/com/TestingData.xls");
-//        //getting workbook,sheet,rows and col
-//        Workbook workbook= Workbook.getWorkbook(excel);
-//        Sheet sheet=workbook.getSheet(0);
-//        int row_count=sheet.getRows();
-//        int col_count=sheet.getColumns();
-//        //create 2d array
-//        String[][] data1=new String[row_count-1][col_count];
-//        for(int i=1;i<row_count;i++)//row iteration
-//        {
-//            for(int j=0;j<col_count;j++)//column iteration
-//            {
-//            	data1[i-1][j]=sheet.getCell(j,i).getContents();//getcell(columns,row)
-//                 System.out.println(data1[i-1][j]);
-//            }
-//        }
-//        return data1;  
-//
-//    }
+	
 }
