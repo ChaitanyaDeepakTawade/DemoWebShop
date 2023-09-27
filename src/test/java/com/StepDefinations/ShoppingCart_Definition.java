@@ -1,6 +1,9 @@
 package com.StepDefinations;
 
+import java.time.Duration;
+
 import com.actions.ShoppingCartActions;
+import com.utils.HelperClass;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -29,6 +32,7 @@ public class ShoppingCart_Definition {
 	@Then("user clicks on shopping cart")
 	public void user_clicks_on_shopping_cart() {
 		shoppingcartactions.goToCart();
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		shoppingcartactions.selectCheckbox();
 		shoppingcartactions.selectCheckout();	
 	}

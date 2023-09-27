@@ -21,7 +21,6 @@ SearchActions searchactions;
 		searchactions.setkeyword(string);
 	}
 
-
 	@Then("user should be able to see products")
 	public void user_should_be_able_to_see_products() {
 		System.out.println("Product Displayed");
