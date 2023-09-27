@@ -2,7 +2,11 @@ package com.locators;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+/*
+ * Login Page Locators.
+ * @author chaitanya Deepk Tawade(expleo Pune)
+ * @sign 23/09/2023 
+*/
 public class LoginPageLocators {
 	
 	@FindBy(id="Email")

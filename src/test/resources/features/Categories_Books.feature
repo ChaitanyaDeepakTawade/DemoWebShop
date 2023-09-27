@@ -1,7 +1,7 @@
 #Author: chaitanya tawade(expleo pune).
 #sign : 24/09/2023
 #This feature file for Sort the Product by price in asscending order and Display as a grid view in Category_BOOKS Page.
-
+@Categories_Books_Page
 Feature: Category_BOOKS Page Sort the Product in asscending order and Display as a grid view.
 Background:
    Given user should be on " https://demowebshop.tricentis.com/login"

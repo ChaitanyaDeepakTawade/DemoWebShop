@@ -2,7 +2,11 @@ package com.locators;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+/*
+ * Footer_Information Section Locators
+ * @author chaitanya Deepk Tawade(expleo Pune)
+ * @sign 25/09/2023 
+*/
 public class Footer_Information_Locators {
 	
 	@FindBy(linkText="Sitemap")

@@ -1,19 +1,24 @@
 package com.StepDefinations;
 
-import com.actions.CategoriesBooksActions;
+import com.actions.Categories_Books_Actions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class CategoriesBookStepDefination {
+/*
+ * Action methods for login Page step defination file.
+ * @author chaitanya Deepk Tawade(expleo Pune)
+ * @sign 24/09/2023 
+*/
+public class Categories_Book_StepDefinition {
 
-	CategoriesBooksActions objActions;
+	Categories_Books_Actions objActions;
 	
 	@Given("User is Logged in")
 	public void user_is_logged_in() {
 		
-		objActions = new CategoriesBooksActions();
+		objActions = new Categories_Books_Actions();
 		
 		objActions.verifyUserLogged();
 		

@@ -8,7 +8,12 @@ import com.actions.LoginPageActions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class LoginPageForgetPasswordStepDefination {
+/*
+ * This File for Forget Password feature file step definition .
+ * @author chaitanya Deepk Tawade(expleo Pune)
+ * @sign 23/09/2023 
+*/
+public class LoginPageForgetPasswordStepDefinition {
 	ForgetPasswordAction obj;
 	@When("click forget password link")
 	public void click_forget_password_link() {

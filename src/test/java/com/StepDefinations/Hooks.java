@@ -16,8 +16,7 @@ public class Hooks {
     public static void setup() {
     	HelperClass.setUpDriver();
     }
-//  
-    
+//   
     @After(order = 1)
 	public void takeScreenshot(Scenario scenario) throws IOException{
 		if(scenario.isFailed()) {
@@ -25,12 +24,9 @@ public class Hooks {
 			byte[] scr = ts.getScreenshotAs(OutputType.BYTES);
 			scenario.attach(scr,"image/png","Screenshot");
  
-		}else {
-			TakesScreenshot ts = (TakesScreenshot) HelperClass.getDriver();
-			byte[] scr = ts.getScreenshotAs(OutputType.BYTES);
-			scenario.attach(scr,"image/png","Screenshot");
 		}
 	}
+    
     @After(order=0)
     public static void afterOpertation() {
         HelperClass.tearDown();
