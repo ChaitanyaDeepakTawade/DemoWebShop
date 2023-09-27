@@ -40,9 +40,12 @@ public class MyAccountFooterLocators {
 	@FindBy(id="checkout")
 	public WebElement checkout;
 	
+	@FindBy(xpath="//div[@class=\"page-title\"]//h1")
+	public WebElement checkoutText;
+	
 	@FindBy(linkText="Wishlist")
 	public WebElement Wishlist;
 	
 	@FindBy(xpath="//div[@class=\"wishlist-content\"]")
-	public WebElement WishlistContent;
+	public WebElement Wishlistcontent;
 }

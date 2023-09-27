@@ -1,5 +1,7 @@
 package com.actions;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -17,6 +19,7 @@ SearchLocators searchlocators;
 	}
 	
 	public void setkeyword(String SearchBox) {
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		searchlocators.SearchBox.sendKeys(SearchBox,Keys.ENTER);
 	}
 	
@@ -24,7 +27,8 @@ SearchLocators searchlocators;
 		searchlocators.SearchBtn.click();
 	}
 	
-	public void dropdown() {
+	public void dropdown(){
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		Select DropdwnSortBy = new Select(searchlocators.Dropdown);
 		DropdwnSortBy.selectByIndex(3);
 	}
