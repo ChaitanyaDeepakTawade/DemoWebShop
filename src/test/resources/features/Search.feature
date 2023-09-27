@@ -10,10 +10,10 @@ Background:
 
 Scenario: Search using the right keyword 
 Given User is on the Home Page
-When User Enters the keyword 
+When User Enters the keyword "Diamond"
 Then user should be able to see products  
 
 Scenario: Search using invalid Keyword
 Given User is on the Home Page
-When user Enters invalid Keyword
+When user Enters invalid Keyword "Poll"
 Then Products will not be displayed
