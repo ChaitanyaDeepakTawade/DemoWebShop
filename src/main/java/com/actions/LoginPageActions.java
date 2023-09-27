@@ -1,10 +1,17 @@
 package com.actions;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.utils.HelperClass;
-import com.locators.LoginPageLocators;
 
+import io.cucumber.java.Scenario;
+
+import com.locators.LoginPageLocators;
+import io.cucumber.java.Scenario;
 public class LoginPageActions {
 	
 	LoginPageLocators objlocators;
@@ -42,8 +49,20 @@ public class LoginPageActions {
 	}
 	public void AssertMessageNegative() {
 
-		 Assert.assertNotEquals(objlocators.MessageNeg.getText(), "Login was unsuccessful. Please correct the errors and try again.");
-		
+		 Assert.assertEquals(objlocators.MessageNeg.getText(), "Login was unsuccessful. Please correct the errors and try again.");
+		 
+	}	
+	public void takeScreenshot(Scenario scenario) throws IOException{
+		if(scenario.isFailed()) {
+			TakesScreenshot ts = (TakesScreenshot) HelperClass.getDriver();
+			byte[] scr = ts.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(scr,"image/png","Screenshot");
+ 
+		}else {
+			TakesScreenshot ts = (TakesScreenshot) HelperClass.getDriver();
+			byte[] scr = ts.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(scr,"image/png","Screenshot");
+		}
 	}
 
 }
