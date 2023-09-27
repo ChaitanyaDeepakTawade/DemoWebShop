@@ -40,8 +40,3 @@ Feature: Add to compare functionality for camera, photo section in electronics t
     When click Twitter link
 
     Then validate Twitter Page is Open or not
-
-  
-
-  
-    

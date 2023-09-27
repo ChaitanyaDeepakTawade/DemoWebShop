@@ -59,6 +59,7 @@ public class Category_Camera_StepDefinition {
 	    
 		objActions.ClickCameraOptionAgain();
 	}
+	
 
 	@Then("user clicks on second camera.")
 	public void user_clicks_on_second_camera() {

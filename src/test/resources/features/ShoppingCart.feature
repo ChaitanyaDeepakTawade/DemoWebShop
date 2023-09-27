@@ -10,8 +10,8 @@ Background:
 Scenario: Add item to cart and place order
 Given User is on home page
 When User selects any item
-And add to cart 
-Then user clicks on shopping cart 
+And add to cart
+Then user clicks on shopping cart
 And Enters the details 
 Then click on continue button 
 And check out

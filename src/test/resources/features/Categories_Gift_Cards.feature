@@ -6,7 +6,7 @@ Feature: Add to compare functionality for camera, photo section in electronics t
   
   User want to be able to compare prices of cameras from the price comparison.
 
-	Background:
+Background:
 
    Given user should be on " https://demowebshop.tricentis.com/login"
 
@@ -17,26 +17,17 @@ Feature: Add to compare functionality for camera, photo section in electronics t
       | Exampale123456@gmail.com    | 123456 |
 
     And click Login button
-		
-  
-  @Footer_Follow_Us_Facebook
+    
+ @Add_Gift_Card_To_Cart
+  Scenario: Adding Gift Card to cart
+    Given Scroll Down t
+    When click Sitemap Link
+    Then validate Sitemap Page is Open or not 
 
-  Scenario: Open Facebook page
 
+  @Footer_Information_Shipping&Returns
+  Scenario: Shipping & Returns Page opening
     Given Scroll Down to footer
-
-    When click Facebook link
-
-    Then validate Facebook Page is Open or not
-
- 
-
-  @Footer_Follow_Us_Twitter
-
-  Scenario: Open Twitter page
-
-    Given Scroll Down to footer
-
-    When click Twitter link
-
-    Then validate Twitter Page is Open or not
+    When click Shipping & Returns Link
+    Then validate Shipping & Returns Page is Open or not 
+    

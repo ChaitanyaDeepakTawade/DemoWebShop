@@ -1,5 +1,5 @@
-#Author: chaitanya tawade(expleo pune).
-#sign : 24/09/2023
+#Author: Devansh Mahindrakar(expleo pune).
+#sign : 25/09/2023
 #This feature file for Verifing footer informations links .
 @Footer_Information_Module
 Feature: Verifing footer informations links working or not

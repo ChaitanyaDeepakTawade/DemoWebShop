@@ -18,11 +18,14 @@ public class Footer_Follow_Us_Actions {
 			
 		}
 		
-		public void ElectronicsTabClick() {
-        	
-			Footer_Follow_Us_Locators.FacebookLink.click();
-
+		public void clickFacebookLink() {
+ 
+			follow_us_locators.FacebookLink.click();
         }
 		
+		public void clickTwitterLink() {
+			 
+			follow_us_locators.TwitterLink.click();
+        }
 		
 }
