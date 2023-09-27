@@ -48,18 +48,7 @@ public class Footer_Information_StepDefination {
 	public void validate_privacy_notice_page_is_open_or_not() {
 		 objActions.assert_PrivacyNotice();	
 	}
-	@When("click Contact us Link")
-	public void click_contact_us_link() {
-		objActions = new Footer_Information_Actions();
-		objActions.click_ContactUs();
-	}
 
-	@Then("validate Contact us Page is Open or not")
-	public void validate_contact_us_page_is_open_or_not() {
-		objActions.assert_ContactUs();
-		
-	}
-	
 	@When("click Conditions of Use Link")
 	public void click_conditions_of_use_link() {
 		objActions = new Footer_Information_Actions();
@@ -77,6 +66,18 @@ public class Footer_Information_StepDefination {
 		objActions.click_AboutUs();
 	}
 
+
+	@Then("validate About us Page is Open or not")
+	public void validate_about_us_page_is_open_or_not() {
+		objActions.assert_AboutUs();
+	}
+	
+	@When("click Contact us Link")
+	public void click_contact_us_link() {
+		objActions = new Footer_Information_Actions();
+		objActions.click_ContactUs();
+	}
+	
 	@When("Enter Data in Contactus form {string} and {int}")
 	public void enter_data_in_contactus_form_and(String sheetname, Integer rownumber) 
 	{
@@ -90,10 +91,13 @@ public class Footer_Information_StepDefination {
 		}
 	}
 
-	@Then("validate About us Page is Open or not")
-	public void validate_about_us_page_is_open_or_not() {
-		objActions.assert_AboutUs();
+	@Then("validate Contact us Page Working")
+	public void validate_contact_us_page_working() {
+		objActions.assert_ContactUs();
+	
 	}
+
+
 
 	
 }

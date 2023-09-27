@@ -37,6 +37,6 @@ public class Footer_Information_Locators {
 	public WebElement submit;
 	
 	@FindBy(xpath="//div[@class=\"result\"]") //after submit form message comming
-	public WebElement message;
+	public WebElement ContactusDataSubmitMessage;
  
 }

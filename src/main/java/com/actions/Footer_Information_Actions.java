@@ -16,9 +16,6 @@ import org.testng.annotations.Test;
 import com.locators.Footer_Information_Locators;
 import com.utils.HelperClass;
 
-import jxl.Sheet;
-import jxl.Workbook;
-import jxl.read.biff.BiffException;
 
 
 public class Footer_Information_Actions {
@@ -110,6 +107,14 @@ public class Footer_Information_Actions {
 			e.printStackTrace();
 			log.error("Error Occured.. Page is not opened");
 		}
+    	
+    	try {
+    		Assert.assertEquals(objFooterInfoLocators.ContactusDataSubmitMessage.getText(), "Your enquiry has been successfully sent to the store owner.");
+    	}
+    	catch (Exception e) {
+			e.printStackTrace();
+			log.error("Contact us data not submitted successfully...!");
+		}
 	}
     public void ContactUsForm(String sheetname, Integer rownumber) throws InvalidFormatException, IOException {
     	
@@ -122,7 +127,6 @@ public class Footer_Information_Actions {
 		objFooterInfoLocators.submit.submit();
     }
     
-    public void 
     
 	public void click_ConditionsofUse() {
 		log.info("------------Openeing Conditions of Use Page----------------");
