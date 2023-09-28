@@ -1,5 +1,8 @@
 package com.StepDefinations;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.actions.SearchActions;
 
 import io.cucumber.java.en.Given;
@@ -8,7 +11,8 @@ import io.cucumber.java.en.When;
 
 public class Search_Definition {
 SearchActions searchactions;
-	
+public static Logger log = LogManager.getLogger(Search_Definition.class); 
+
 
 	@Given("User is on the Home Page")
 	public void user_is_on_the_home_page() {
@@ -24,6 +28,7 @@ SearchActions searchactions;
 	@Then("user should be able to see products")
 	public void user_should_be_able_to_see_products() {
 		System.out.println("Product Displayed");
+		log.info("Named Product Displayed");
 	}
 
 	@When("user Enters invalid Keyword {string}")
@@ -34,6 +39,7 @@ SearchActions searchactions;
 	@Then("Products will not be displayed")
 	public void products_will_not_be_displayed() {
 	   System.out.println("Product not Displayed");
+	   log.error("Product not dispalyed");
 	}
 
 

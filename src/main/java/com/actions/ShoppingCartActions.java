@@ -42,31 +42,7 @@ ShoppingCartLocators shoppingcartlocators;
 	
 	public void selectCheckout() {
 		shoppingcartlocators.CheckoutBtn.click();
-	}/*
-		 * 
-		 * public void addNewAddress() { Select DropdwnSortBy = new
-		 * Select(shoppingcartlocators.newAddress); DropdwnSortBy.selectByIndex(2); }
-		 * 
-		 * public void selectCountry() { Select DropdwnSortBy = new
-		 * Select(shoppingcartlocators.selectCountry); DropdwnSortBy.selectByIndex(10);
-		 * }
-		 * 
-		 * public void enterCity(String city) {
-		 * shoppingcartlocators.enterCity.sendKeys(city); }
-		 * 
-		 * public void enterAddress1(String address1) {
-		 * shoppingcartlocators.enterAddress1.sendKeys(address1); }
-		 * 
-		 * public void enterAddress2(String address2) {
-		 * shoppingcartlocators.enterAddress2.sendKeys(address2); }
-		 * 
-		 * public void enterZipCode(String zipcode) {
-		 * shoppingcartlocators.enterZipCode.sendKeys(zipcode); }
-		 * 
-		 * public void enterPhoneno(String phonenumber) {
-		 * shoppingcartlocators.enterPhoneno.sendKeys(phonenumber); }
-		 */
-	
+	}
 	public void clickContinue1() {
 		shoppingcartlocators.continue1.sendKeys(Keys.ENTER);
 	}
