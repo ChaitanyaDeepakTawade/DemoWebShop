@@ -1,3 +1,6 @@
+# Author: Aditya Ghorpade (Expleo Pune).
+# Sign: 24/09/2023
+# This feature file contains a scenario for sending a product to a friend via email.
 @TC_Category_Apparels_&_Shoes_7.1
 Feature: Send Product to Friend via Email
 

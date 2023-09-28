@@ -32,6 +32,9 @@ Feature: Customer Service Features
     Then I should be able to view and read the blog posts related to the store on the blog page
 
   @RecentlyViewed
+# Author: Aditya Ghorpade (Expleo Pune).
+# Sign: 24/09/2023
+# This feature file is for verifying footer information links.
   Scenario: Recently Viewed Products
     Given Scroll Down to footer
     When I have recently viewed some products on the website
