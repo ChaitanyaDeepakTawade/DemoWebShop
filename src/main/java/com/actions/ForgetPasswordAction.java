@@ -1,8 +1,10 @@
 package com.actions;
 
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.locators.ForgetPasswordLocators;
 import com.locators.LoginPageLocators;
@@ -18,7 +20,7 @@ public class ForgetPasswordAction {
 	ForgetPasswordLocators objLocators;
     Logger log;
 	public ForgetPasswordAction(){	
-		
+		log = LogManager.getLogger(ForgetPasswordAction.class);
 		this.objLocators = new 	ForgetPasswordLocators();	
 		PageFactory.initElements(HelperClass.getDriver(), objLocators );
 		
@@ -42,7 +44,7 @@ public class ForgetPasswordAction {
 		objLocators.Recover.click();
 		objLocators.EmailBox.clear();
 	}
-	
+	@Test (description="Validate Forget Password Page")
 	public void assertMessage() {
 		log.info("Verify warning message");
 		if(objLocators.Message.getText().equals("Email not found.")) {

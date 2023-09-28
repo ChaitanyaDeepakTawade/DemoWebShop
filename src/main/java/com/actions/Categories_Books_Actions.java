@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.locators.Categories_Books_Locators;
 import com.locators.LoginPageLocators;
@@ -23,7 +25,8 @@ public class Categories_Books_Actions {
 	Logger log;
 	Categories_Books_Locators objBooksPageLocators;
 	public Categories_Books_Actions() {
-		
+		log = LogManager.getLogger(Categories_Books_Actions.class);
+
 		this.objBooksPageLocators =new Categories_Books_Locators();
 		
 		PageFactory.initElements(HelperClass.getDriver(), objBooksPageLocators );
@@ -66,7 +69,7 @@ public class Categories_Books_Actions {
 		
 	}
 	// verify Displayed Product InOrder Or Not Method use for verify product order is in price Low to High or not
-
+   	@Test (description="verify Displayed Product Is In Ordered Or Not")
 	public void verifyDisplayedProductInOrderOrNot() {
 	    log.info("verify Displayed Product Inorder Or Not");
 		 List<String>list=new ArrayList<>();

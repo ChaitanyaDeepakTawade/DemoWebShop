@@ -4,10 +4,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import com.utils.HelperClass;
 
@@ -24,7 +26,7 @@ public class RegisterPageActions {
 	
 	Logger log;
 	public RegisterPageActions() {
-		
+		log = LogManager.getLogger(RegisterPageActions.class);
 		this.objRegisterPageLocators =new RegisterPageLocators();
 		PageFactory.initElements(HelperClass.getDriver(), objRegisterPageLocators );
 	    log.info("open Rgistration Page");
@@ -68,7 +70,7 @@ public class RegisterPageActions {
 		objRegisterPageLocators.registerButton.click();
 		log.info("click register button");
 	}
-	
+	@Test (description="Validate Registration Form")
 	public void assertMessage() {
 		if(objRegisterPageLocators.emailWorning.getText().equals("Wrong email")) {
 			//Email is not registered.
@@ -80,21 +82,23 @@ public class RegisterPageActions {
 			}
 			
 		}else if(objRegisterPageLocators.Message.getText().equals("Your registration completed")) {
-		   try {
+		  
+			try {
 			Assert.assertEquals(objRegisterPageLocators.Message.getText(), "Your registration completed");
 		    
 		   }catch (Exception e) {
 				e.printStackTrace();
 				log.error("Error Occured.. not login");
 			}
-		//Clear Form for new Entry 
-		   objRegisterPageLocators.fName.clear();
-			objRegisterPageLocators.lName.clear();
-			objRegisterPageLocators.Email.clear();
-			objRegisterPageLocators.Password.clear();
-			objRegisterPageLocators.confPassword.clear();
+		
 		
 		}
+		//Clear Form for new Entry 
+	    objRegisterPageLocators.fName.clear();
+		objRegisterPageLocators.lName.clear();
+		objRegisterPageLocators.Email.clear();
+		objRegisterPageLocators.Password.clear();
+		objRegisterPageLocators.confPassword.clear();
 	}
 	
 	public void fillData(String Gender, String FName,String LName, String email, String Password,String ConfPassword) {

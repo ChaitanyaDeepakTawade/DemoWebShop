@@ -2,7 +2,8 @@
 #sign : 23/09/2023
 #This feature file for validate login page with Positive & Negative Test Data.
 @LoginPage
-Feature: Login Page Validatiion With Positive Negative credential 
+Feature: Login Page Validatiion With Positive Negative credential
+  @TC_2.1_LoginPage
   @Positive
   Scenario Outline: login with valid credentials
     Given user should be on " https://demowebshop.tricentis.com/login"
