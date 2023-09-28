@@ -122,7 +122,7 @@ public class Footer_Information_Actions {
 		objFooterInfoLocators.submit.submit();
     }
     
-    public void 
+
     
 	public void click_ConditionsofUse() {
 		log.info("------------Openeing Conditions of Use Page----------------");
