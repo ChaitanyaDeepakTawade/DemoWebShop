@@ -1,5 +1,7 @@
 package com.StepDefinations;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 import com.actions.MyAccountFooterActions;
@@ -9,6 +11,7 @@ import io.cucumber.java.en.When;
 
 public class MyAccountFooter_Definition {
 	 MyAccountFooterActions myaccountFooterDef = new MyAccountFooterActions(); 
+	 public static Logger log = LogManager.getLogger(MyAccountFooter_Definition.class); 
 
 	@When("user goes to bottom")
 	public void user_goes_to_bottom() {
@@ -19,7 +22,8 @@ public class MyAccountFooter_Definition {
 	@When("clicks on option MyAccount")
 	public void clicks_on_option_my_account() {
 		//selects MyAccount
-		myaccountFooterDef.clickMyAccount();		
+		myaccountFooterDef.clickMyAccount();
+		log.info("Selected MyAccount Footer");
 	}
 
 	@Then("MyAccount details are displayed")
@@ -41,6 +45,7 @@ public class MyAccountFooter_Definition {
 	public void clicks_on_option_orders() {
 		//select orders option
 		myaccountFooterDef.clickorders();
+		log.info("Selected MyOrder Footer");
 	}
 
 	@Then("Odrer details are displayed")
@@ -53,6 +58,7 @@ public class MyAccountFooter_Definition {
 	public void click_on_option_addresses() {
 		//selects address option
 		myaccountFooterDef.clickAddresses();
+		log.info("Selected Addresses Footer");
 	}
 
 	@Then("Address to be displayed")
@@ -61,6 +67,7 @@ public class MyAccountFooter_Definition {
 		//Calling change address method
 		myaccountFooterDef.changeAddress("452012");
 		System.out.println("Address zipCode Changed");
+		log.info("Address Updated");
 	}
 
 	@When("click on option shoppingCart")
@@ -86,6 +93,7 @@ public class MyAccountFooter_Definition {
 	public void click_on_option_wishlist() {
 		//clicks on Wishlist option 
 		myaccountFooterDef.clickWishlist();
+		log.info("Selected Wishlist Footer");
 	}
 
 	@Then("Wishlist items are displayed")
