@@ -3,6 +3,7 @@
 #This feature file for forget password page .
 @ForgetPassword
 Feature: Forget Password using Email
+@TC_2.2_ForgetPasswordPage
   Scenario Outline: Forget Password With Email 
     Given user should be on " https://demowebshop.tricentis.com/login"
     When click forget password link

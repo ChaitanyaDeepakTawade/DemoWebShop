@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.actions.Footer_Information_Actions;
 import com.utils.HelperClass;

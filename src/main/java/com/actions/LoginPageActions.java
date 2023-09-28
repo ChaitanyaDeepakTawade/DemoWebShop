@@ -1,11 +1,13 @@
 package com.actions;
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.utils.HelperClass;
 
@@ -27,7 +29,7 @@ public class LoginPageActions {
 	Logger log;
 	
 	public LoginPageActions() {
-		
+		log = LogManager.getLogger(LoginPageActions.class);
 		this.objlocators =new LoginPageLocators();
 		
 		PageFactory.initElements(HelperClass.getDriver(), objlocators);
@@ -52,6 +54,7 @@ public class LoginPageActions {
 		objlocators.loginBtn.click();
 		
 	}
+	@Test (description="Login Page Warning Message")
 	public void AssertMessage(String email) {
 		try {
 		 Assert.assertEquals(objlocators.Message.getText(),email);
@@ -60,6 +63,7 @@ public class LoginPageActions {
 			log.error("Not Login sucessfully ");
 		}
 	}
+	@Test (description="Login Page Warning Message Incorrect Credentials")
 	public void AssertMessageNegative() {
          try {
         	 Assert.assertNotEquals(objlocators.MessageNeg.getText(), "Login was unsuccessful. Please correct the errors and try again.");

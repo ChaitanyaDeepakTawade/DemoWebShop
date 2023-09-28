@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.locators.Footer_Information_Locators;
 import com.utils.ExcelReader;
@@ -37,7 +38,7 @@ public class Footer_Information_Actions {
 		
 		
 	}
-	
+	@Test(description="Validate Sitemap Page is Opened")
 	public void assert_Sitemap() {
 		try {
 	    	Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/sitemap");
@@ -52,7 +53,8 @@ public class Footer_Information_Actions {
 		objFooterInfoLocators.ShippingAndReturns.click();
 		
 	}
-	
+	@Test(description="Validate Shipping And Returns Page is Opened")
+
 	public void assert_ShippingAndReturns() {
 		try {
 			Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/shipping-returns");
@@ -67,7 +69,8 @@ public class Footer_Information_Actions {
 		objFooterInfoLocators.PrivacyNotice.click();
 		
 	}
-    
+	@Test(description="Validate Privacy Notice Page Opened")
+
     public void assert_PrivacyNotice() {
     	try {
 		   Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/privacy-policy");
@@ -84,7 +87,8 @@ public class Footer_Information_Actions {
 		objFooterInfoLocators.AboutUs.click();
 		
 	}
-    
+	@Test(description="Validate About Us Page is Opened")
+
     public void assert_AboutUs() {
     	try { 
     		Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/about-us");
@@ -100,7 +104,7 @@ public class Footer_Information_Actions {
 		objFooterInfoLocators.ContactUs.click();
 		
 	}
-    
+	@Test(description="Validate ContactUs Page is Opened and data is submitted sucessfully")
     public void assert_ContactUs() {
     	try {
     		Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/contactus");
@@ -135,7 +139,7 @@ public class Footer_Information_Actions {
 		objFooterInfoLocators.ConditionsofUse.click();
 		
 	}
-	
+	@Test(description="Validate Coondition of Us Page Opened")
 	public void assert_ConditionsofUse() {
 		try {
 			Assert.assertEquals(HelperClass.getDriver().getCurrentUrl(), "https://demowebshop.tricentis.com/conditions-of-use");

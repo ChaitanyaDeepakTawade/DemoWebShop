@@ -5,6 +5,7 @@
     <classes>
       <class name="com.StepDefinations.Hooks"/>
       <class name="com.utils.HelperClass"/>
+      <class name="com.Runner.Runner"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
