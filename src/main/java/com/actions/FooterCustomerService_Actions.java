@@ -1,5 +1,7 @@
 package com.actions;
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
@@ -18,13 +20,14 @@ public class FooterCustomerService_Actions {
 		objFooter_CustomerService_Locators = new Footer_CustomerService_Locators();
 		PageFactory.initElements(HelperClass.getDriver(), objFooter_CustomerService_Locators);
 		
-		//Search Footer Action
+	//Search Footer Action
 	}
 	public void clickOnSearch() {
 		log.info("------------Opening Search----------------");
 		objFooter_CustomerService_Locators.SearchFooterClick.click();	
 	}
 	public String enterFooterSearchKeywords(String search) {
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		objFooter_CustomerService_Locators.SearchFooterText.sendKeys("HandyCam");
 	return search;
 }
@@ -32,17 +35,19 @@ public class FooterCustomerService_Actions {
 		objFooter_CustomerService_Locators.Footersearchbutton.click();
 	}
 	public void assertfootersearch() {
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 	    String actualMessage = objFooter_CustomerService_Locators.verifyfootersearch.getText();
 	    String expectedMessage = "1MP 60GB Hard Drive Handycam Camcorder";
 
 	    Assert.assertEquals(expectedMessage, actualMessage);
+	    HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 	    
 	    // If the assertion passes, print a success message.
 	    System.out.println("Assertion Passed: Product is as expected.");
 	}
 	//News Footer
 	public void clickOnNewsFooter() {
-		log.info("------------Openeing Footer----------------");
+		log.info("------------Opening Footer----------------");
 		objFooter_CustomerService_Locators.NewsFooterClick.click();
 		
 	}
@@ -57,7 +62,7 @@ public class FooterCustomerService_Actions {
 	}
 	//Blog Footer
 	public void clickOnBlogFooter() {
-		log.info("------------Openeing Blog----------------");
+		log.info("------------Opening Blog----------------");
 		objFooter_CustomerService_Locators.BlogFooterClick.click();
 		
 	}
@@ -72,7 +77,7 @@ public class FooterCustomerService_Actions {
 	}
 	//Recently Viewed Products Footer
 	public void clickOnRecentlyViewedFooter() {
-		log.info("------------Openeing Recently Viewed Products----------------");
+		log.info("------------Opening Recently Viewed Products----------------");
 		objFooter_CustomerService_Locators.RecentlyViewedProductsClick.click();
 		
 	}
@@ -88,7 +93,7 @@ public class FooterCustomerService_Actions {
 	}
 	//Compare Product List  Footer
 	public void clickOnCompareProductListFooter() {
-		log.info("------------Openeing Compare Product List----------------");
+		log.info("------------Opening Compare Product List----------------");
 		objFooter_CustomerService_Locators.CompareProductListFooterClick.click();
 			
 	}
@@ -103,7 +108,7 @@ public class FooterCustomerService_Actions {
 		 System.out.println("Assertion Passed: Compare Product List are Displayed.");
 		}
 	public void clickOnNewProducts() {
-		log.info("------------Openeing New Products----------------");
+		log.info("------------Opening New Products----------------");
 		objFooter_CustomerService_Locators.NewProductsFooterClick.click();
 			
 	}

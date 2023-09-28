@@ -31,7 +31,7 @@ public class ComputersStepDefination {
 	public void i_compare_prices_of_at_least_two_products() {
 		objCategories_Computers_Actions = new Categories_Computers_Actions();
         float comparedPrice = objCategories_Computers_Actions.compareItemPrices();
-        System.out.println("Compared price: " + comparedPrice);
+        System.out.println("Compared price after 1st product: " + comparedPrice);
 	    
     
 	}
