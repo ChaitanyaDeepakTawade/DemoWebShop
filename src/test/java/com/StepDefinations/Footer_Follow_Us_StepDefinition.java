@@ -1,3 +1,10 @@
+/*
+ * A simple step definition file for Footer Follow Us.
+ * 
+ * @author Devansh M (Expleo Group)
+ * since JDK17 9/26/2023
+ */
+
 package com.StepDefinations;
 
 import java.util.ArrayList;
@@ -7,7 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-import com.actions.Categories_Camera_Actions;
+import com.actions.CategoriesCameraActions;
 import com.actions.Footer_Follow_Us_Actions;
 import com.utils.HelperClass;
 

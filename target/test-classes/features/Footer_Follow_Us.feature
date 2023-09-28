@@ -1,6 +1,6 @@
 #Author: devansh.mahindrakar@expleogroup.com
-#sign : 25/09/2023
-#Add to compare functionality for camera, photo section in electronics tab for demowebshop ecommerce website.
+#sign : 26/09/2023
+#Feature File to Assert Whether Facebook & Twitter links in Footer Follow Us open in new tab in the browser or not.
 
 Feature: Add to compare functionality for camera, photo section in electronics tab for demowebshop ecommerce website.
   
@@ -29,7 +29,6 @@ Feature: Add to compare functionality for camera, photo section in electronics t
 
     Then validate Facebook Page is Open or not
 
- 
 
   @Footer_Follow_Us_Twitter
 

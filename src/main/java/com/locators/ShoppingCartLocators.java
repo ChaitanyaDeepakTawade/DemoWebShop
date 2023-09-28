@@ -63,7 +63,4 @@ public class ShoppingCartLocators {
 	public WebElement confirm;
 	
 	
-	
-
-	
 }

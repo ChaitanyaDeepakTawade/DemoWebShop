@@ -18,6 +18,7 @@ public class Footer_Information_Actions {
  
 	Footer_Information_Locators objFooterInfoLocators;
 	Logger log;
+	
 	public Footer_Information_Actions(){
 		log = LogManager.getLogger(Footer_Information_Actions.class);
 
@@ -26,7 +27,7 @@ public class Footer_Information_Actions {
 
 	}
 	public void click_Sitemap() {
-		log.info("------------Openeing Sitemap----------------");
+		log.info("------------Opening Sitemap----------------");
 		objFooterInfoLocators.Sitmap.click();
 		
 		
@@ -42,7 +43,7 @@ public class Footer_Information_Actions {
 	}
 	
 	public void click_ShippingAndReturns() {
-		log.info("------------Openeing Shipping And Returns----------------");
+		log.info("------------Opening Shipping And Returns----------------");
 		objFooterInfoLocators.ShippingAndReturns.click();
 		
 	}
@@ -56,8 +57,9 @@ public class Footer_Information_Actions {
 			log.error("Error Occured.. Page is not opened");
 		}
 	}
+	
     public void click_PrivacyNotice() {
-    	log.info("------------Openeing Privacy Notice----------------");
+    	log.info("------------Opening Privacy Notice----------------");
 		objFooterInfoLocators.PrivacyNotice.click();
 		
 	}
@@ -69,8 +71,8 @@ public class Footer_Information_Actions {
     	catch (Exception e) {
 			e.printStackTrace();
 			log.error("Error Occured.. Page is not opened");
+			
 		}
-
 	}
     
     public void click_AboutUs() {
@@ -104,13 +106,14 @@ public class Footer_Information_Actions {
 			log.error("Error Occured.. Page is not opened");
 		}
 	}
+    
    // @Test(dataProvider = "datapro")
     public void ContactUsForm() {
     	
     	System.out.println();
     	
-    	
     }
+    
 	public void click_ConditionsofUse() {
 		log.info("------------Openeing Conditions of Use Page----------------");
 		objFooterInfoLocators.ConditionsofUse.click();
@@ -126,6 +129,7 @@ public class Footer_Information_Actions {
 			log.error("Error Occured.. Page is not opened");
 		}
 	}
+	
 //	@DataProvider(name="datapro")
 //	String[][] credential() throws BiffException, IOException
 //	{   
@@ -142,6 +146,7 @@ public class Footer_Information_Actions {
 //        Sheet sheet=workbook.getSheet(0);
 //        int row_count=sheet.getRows();
 //        int col_count=sheet.getColumns();
+	
 //        //create 2d array
 //        String[][] data1=new String[row_count-1][col_count];
 //        for(int i=1;i<row_count;i++)//row iteration
@@ -152,6 +157,7 @@ public class Footer_Information_Actions {
 //                 System.out.println(data1[i-1][j]);
 //            }
 //        }
+	
 //        return data1;  
 //
 //    }

@@ -11,6 +11,7 @@ import io.cucumber.java.en.When;
 public class Footer_Information_StepDefination {
     
 	Footer_Information_Actions objActions;
+	
 	@When("click Sitemap Link")
 	public void click_sitemap_link() {
 		objActions = new Footer_Information_Actions();

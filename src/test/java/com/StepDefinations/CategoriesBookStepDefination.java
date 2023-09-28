@@ -37,7 +37,6 @@ public class CategoriesBookStepDefination {
 
 	@Then("verify displayed product is in sorted order or not")
 	public void verify_displayed_product_is_in_sorted_order_or_not() {
-		
 		objActions.verifyDisplayedProductInOrderOrNot();
 	}
 

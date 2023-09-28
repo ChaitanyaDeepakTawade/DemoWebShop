@@ -1,3 +1,10 @@
+/*
+ * A simple locater file for Footer Follow Us Section.
+ * 
+ * @author Devansh M (Expleo Group)
+ * since JDK17 9/26/2023
+ */
+
 package com.locators;
 
 import org.openqa.selenium.WebElement;
