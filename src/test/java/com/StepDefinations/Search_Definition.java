@@ -1,9 +1,5 @@
 package com.StepDefinations;
-<<<<<<< Updated upstream
-=======
 
-
->>>>>>> Stashed changes
 import com.actions.SearchActions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
