@@ -16,8 +16,8 @@ public class Hooks {
     public static void setup() {
     	HelperClass.setUpDriver();
     }
-//  
     
+//To Take Screenshot   
     @After(order = 1)
 	public void takeScreenshot(Scenario scenario) throws IOException{
 		if(scenario.isFailed()) {

@@ -21,6 +21,7 @@ SearchLocators searchlocators;
 	public void setkeyword(String SearchBox) {
 		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		searchlocators.SearchBox.sendKeys(SearchBox,Keys.ENTER);
+		
 	}
 	
 	public void pressSearch() {
@@ -33,6 +34,9 @@ SearchLocators searchlocators;
 		DropdwnSortBy.selectByIndex(3);
 	}
 	
+	public String invalidData() {
+		return searchlocators.InvalidData.getText();
+	}
 	
 	
 

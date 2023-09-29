@@ -15,4 +15,7 @@ public class SearchLocators {
 	@FindBy(id="products-orderby")
 	public WebElement Dropdown;
 	
+	@FindBy(xpath="//div[@class=\"search-results\"]//following-sibling::strong")
+	public WebElement InvalidData;
+	
 }

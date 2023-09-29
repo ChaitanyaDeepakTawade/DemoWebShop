@@ -95,10 +95,11 @@
 					<configuration>
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
-						</suiteXmlFiles>
+						</suiteXmlFiles>	
+               <parallel>methods</parallel>
+               <useUnlimitedThreads>true</useUnlimitedThreads>
 					</configuration>
-			  </plugin>
-			  
+			  </plugin>	  
     	</plugins>
 
     </build>

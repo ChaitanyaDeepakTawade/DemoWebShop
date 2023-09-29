@@ -5,12 +5,14 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 import com.actions.MyAccountFooterActions;
+import com.actions.ShoppingCartActions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class MyAccountFooter_Definition {
 	 MyAccountFooterActions myaccountFooterDef = new MyAccountFooterActions(); 
+	 ShoppingCartActions shoppingcartactions = new ShoppingCartActions();
 	 public static Logger log = LogManager.getLogger(MyAccountFooter_Definition.class); 
 
 	@When("user goes to bottom")
@@ -71,9 +73,12 @@ public class MyAccountFooter_Definition {
 	}
 
 	@When("click on option shoppingCart")
-	public void click_on_option_shopping_cart() {
-		myaccountFooterDef.scrollDown();
-		//To select the shoppingCart  
+	public void click_on_option_shopping_cart() { 
+		shoppingcartactions.clickJewelry();
+		shoppingcartactions.selectJewelry();
+		shoppingcartactions.addToCart();
+		log.info("Item Added to Cart");
+		myaccountFooterDef.scrollDown();  
 		myaccountFooterDef.clickShoppingCart();
 	}
 

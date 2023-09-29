@@ -2,8 +2,10 @@ package com.StepDefinations;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 
 import com.actions.SearchActions;
+import com.locators.SearchLocators;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,6 +13,7 @@ import io.cucumber.java.en.When;
 
 public class Search_Definition {
 SearchActions searchactions;
+SearchLocators searchlocators = new SearchLocators();
 public static Logger log = LogManager.getLogger(Search_Definition.class); 
 
 
@@ -38,8 +41,10 @@ public static Logger log = LogManager.getLogger(Search_Definition.class);
 
 	@Then("Products will not be displayed")
 	public void products_will_not_be_displayed() {
-	   System.out.println("Product not Displayed");
-	   log.error("Product not dispalyed");
+		String s = searchactions.invalidData();
+		Assert.assertEquals(s, "No products were found that matched your criteria");
+		//System.out.println("Product not Displayed");
+	   log.info("Product not dispalyed");
 	}
 
 

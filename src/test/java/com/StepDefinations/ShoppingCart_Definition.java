@@ -2,6 +2,9 @@ package com.StepDefinations;
 
 import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.actions.ShoppingCartActions;
 import com.utils.HelperClass;
 
@@ -11,6 +14,8 @@ import io.cucumber.java.en.When;
 
 public class ShoppingCart_Definition {
 	ShoppingCartActions shoppingcartactions;
+	public static Logger log = LogManager.getLogger(ShoppingCart_Definition.class); 
+
 
 	@Given("User is on home page")
 	public void user_is_on_home_page() {
@@ -27,6 +32,7 @@ public class ShoppingCart_Definition {
 	@When("add to cart")
 	public void add_to_cart() {
 		shoppingcartactions.addToCart();
+		log.info("Item Added to Cart");
 	}
 
 	@Then("user clicks on shopping cart")
@@ -35,17 +41,9 @@ public class ShoppingCart_Definition {
 		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		shoppingcartactions.selectCheckbox();
 		shoppingcartactions.selectCheckout();	
+		log.info("CheckBox Selected and Checked Out");
 	}
 
-	@Then("Enters the details")
-	public void enters_the_details() {
-		/*
-		 * shoppingcartactions.selectCountry(); shoppingcartactions.enterCity("Indore");
-		 * shoppingcartactions.enterAddress1("123 ABC");
-		 * shoppingcartactions.enterAddress2("Dash Colony");
-		 * shoppingcartactions.enterZipCode("12345");
-		 * shoppingcartactions.enterPhoneno("987654321");
-		 */	}
 
 	@Then("click on continue button")
 	public void click_on_continue_button() {
