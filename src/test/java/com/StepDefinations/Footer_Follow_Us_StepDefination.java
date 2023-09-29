@@ -14,7 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-import com.actions.CategoriesCameraActions;
+import com.actions.Categories_Camera_Actions;
 import com.actions.Footer_Follow_Us_Actions;
 import com.utils.HelperClass;
 
