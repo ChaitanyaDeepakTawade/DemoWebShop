@@ -18,8 +18,3 @@ public class Footer_Follow_Us_Locators {
 	@FindBy(xpath = "//a[@href='https://twitter.com/nopCommerce' and @target='_blank']")
 	public WebElement TwitterLink;
 }
-package com.locators;
-
-public class Footer_Follow_Us_Locators {
-	
-}
