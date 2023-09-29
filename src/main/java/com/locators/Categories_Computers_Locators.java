@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 	public class Categories_Computers_Locators {
 
-		@FindBy(xpath = "//a[@href=\"/computers\" and normalize-space(.)=\"Computers\"]")
+		@FindBy(xpath = "//div[@class = 'header-menu']/descendant::li[2]/child::a")
 	    public WebElement hoverOnDesktop;
 
 	    @FindBy(xpath = "//a[@href='/desktops' and @title='Show products in category Desktops']")
