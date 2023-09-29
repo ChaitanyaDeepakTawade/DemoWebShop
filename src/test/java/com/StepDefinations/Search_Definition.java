@@ -1,5 +1,8 @@
 package com.StepDefinations;
 
+<<<<<<< HEAD
+public class Search_Definition {
+=======
 import com.actions.SearchActions;
 
 import io.cucumber.java.en.Given;
@@ -38,5 +41,6 @@ SearchActions searchactions;
 
 
 
+>>>>>>> e249c5eeca257b1ad942cde0f67ed978789d08d9
 
 }
