@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 public class Runner {
 	
 	@CucumberOptions(
-			features = {"src/test/resources/features/Categories_Camera.feature", "src/test/resources/features/Footer_Follow_Us.feature"},
+			features = {"src/test/resources/features/CategoriesCamera.feature", "src/test/resources/features/FooterFollowUs.feature"},
 			glue = "com.StepDefinations",
 			plugin = {"pretty","html:target/cucumber reports","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 			

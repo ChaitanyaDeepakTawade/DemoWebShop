@@ -22,7 +22,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Footer_Follow_Us_StepDefinition {
+public class FooterFollowUsStepDefinition {
 	
 	Footer_Follow_Us_Actions FooterObj = new Footer_Follow_Us_Actions();
 	

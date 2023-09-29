@@ -45,9 +45,9 @@ public class Footer_Follow_Us_Actions {
 			//js.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
 			log.info("------------Opening Facebook link----------------");
 			
-			//follow_us_locators.FacebookLink.click();
+			follow_us_locators.FacebookLink.click();
 			
-			js.executeScript("follow_us_locators.FacebookLink.click()");
+			//js.executeScript("follow_us_locators.FacebookLink.click()");
         }
 		
 		public void clickTwitterLink() {
