@@ -1,10 +1,7 @@
 package com.actions;
 
-<<<<<<< HEAD
-=======
 import java.time.Duration;
 
->>>>>>> e249c5eeca257b1ad942cde0f67ed978789d08d9
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 
@@ -26,11 +23,10 @@ ShoppingCartLocators shoppingcartlocators;
 	
 	public void selectJewelry() {
 		shoppingcartlocators.SelectJewelry.click();
-<<<<<<< HEAD
-=======
+
 		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 
->>>>>>> e249c5eeca257b1ad942cde0f67ed978789d08d9
+
 	}
 	
 	public void addToCart() {
@@ -38,10 +34,9 @@ ShoppingCartLocators shoppingcartlocators;
 	}
 	
 	public void goToCart() {
-<<<<<<< HEAD
-=======
+
 		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
->>>>>>> e249c5eeca257b1ad942cde0f67ed978789d08d9
+
 		shoppingcartlocators.ShoppingCart.click();
 	}
 	
@@ -95,8 +90,4 @@ ShoppingCartLocators shoppingcartlocators;
 		shoppingcartlocators.confirm.sendKeys(Keys.ENTER);
 	}
 
-<<<<<<< HEAD
-	
-=======
->>>>>>> e249c5eeca257b1ad942cde0f67ed978789d08d9
 }
