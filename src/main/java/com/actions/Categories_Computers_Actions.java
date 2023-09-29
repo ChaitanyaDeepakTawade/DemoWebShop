@@ -1,11 +1,14 @@
 package com.actions;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.locators.Categories_Computers_Locators;
 import com.utils.HelperClass;
@@ -21,6 +24,9 @@ Categories_Computers_Locators objCategories_Computers_Locators;
 	}
 	
 	public void hoverondesktop() {
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+
+		 wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Computers")));
 		objCategories_Computers_Locators.hoverOnDesktop.click();
 }	
 	public void clickondesktop() {
