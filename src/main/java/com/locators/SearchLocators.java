@@ -5,7 +5,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class SearchLocators {
 
+<<<<<<< HEAD
+=======
 	
+>>>>>>> e249c5eeca257b1ad942cde0f67ed978789d08d9
 	@FindBy(id="small-searchterms")
 	public WebElement SearchBox;
 	
@@ -15,4 +18,9 @@ public class SearchLocators {
 	@FindBy(id="products-orderby")
 	public WebElement Dropdown;
 	
+<<<<<<< HEAD
+	
+	
+=======
+>>>>>>> e249c5eeca257b1ad942cde0f67ed978789d08d9
 }
