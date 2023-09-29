@@ -1,78 +1,76 @@
+/*
+ * A simple action file for categories camera section.
+ * 
+ * @author Devansh M (Expleo Group)
+ * since JDK17 9/25/2023
+ */
+
 package com.actions;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.locators.Categories_Camera_Locators;
+import com.locators.CategoriesCameraLocators;
 import com.utils.HelperClass;
 
-public class Categories_Camera_Actions {
+public class CategoriesCameraActions {
      
-	Categories_Camera_Locators categories_Camera_Locators;
+	CategoriesCameraLocators cameraLocatorsObj;
 	//Linking Action to Locators
-	public Categories_Camera_Actions() {
+		public CategoriesCameraActions() {
 
-			categories_Camera_Locators = new Categories_Camera_Locators();
-			PageFactory.initElements(HelperClass.getDriver(), categories_Camera_Locators);
-
+			cameraLocatorsObj = new CategoriesCameraLocators();
+			PageFactory.initElements(HelperClass.getDriver(), cameraLocatorsObj);
 		}
 
-        public void ElectronicsTabClick() {
+        public void electronicsTabClick() {
         	
-			categories_Camera_Locators.ElectronicsTab.click();
-
-        }
-        public void CameraClick() {
-        	
-			categories_Camera_Locators.CameraPhotoOption.click();
-
+			cameraLocatorsObj.electronicsTab.click();
         }
         
-        public String AssertCameraPage() {
+        public void cameraClick() {
         	
-			return categories_Camera_Locators.AssertCameraPage.getText();
-
+			cameraLocatorsObj.cameraPhotoOption.click();
         }
         
-        public void FirstCamera() {
+        public String assertCameraPage() {
         	
-        	categories_Camera_Locators.ClickFirstCamera.click();
-
+			return cameraLocatorsObj.assertCameraPage.getText();
         }
         
-        public void AddFirstCameraToCompareList() {
+        public void firstCamera() {
         	
-        	categories_Camera_Locators.AddFirstCameratoCompare.click();
-
+        	cameraLocatorsObj.clickFirstCamera.click();
         }
         
-        public void ClickElectronicsOption() {
+        public void addFirstCameraToCompareList() {
         	
-        	categories_Camera_Locators.ClickElectronicsAgain.click();
-
+        	cameraLocatorsObj.addFirstCameraToCompare.click();
         }
         
-        public void ClickCameraOptionAgain() {
+        public void clickElectronicsOption() {
         	
-        	categories_Camera_Locators.ClickCameraPhotoOptionAgain.click();
-
+        	cameraLocatorsObj.clickElectronicsAgain.click();
+        }
+        
+        public void clickCameraOptionAgain() {
+        	
+        	cameraLocatorsObj.clickCameraPhotoOptionAgain.click();
         }
         
         public void SecondCameraClick() {
         	
-        	categories_Camera_Locators.ClickSecondCamera.click();
-
+        	cameraLocatorsObj.clickSecondCamera.click();
         }
         
-        public void AddSecondCameraToCompareList() {
+        public void addSecondCameraToCompareList() {
         	
-        	categories_Camera_Locators.AddSecondCameraToCompare.click();
-
+        	cameraLocatorsObj.addSecondCameraToCompare.click();
         }
         
-        public String AssertCompareList() {
+        public String assertCompareList(){
         	
-        	return categories_Camera_Locators.AssertCompare.getText();
-
+        	return cameraLocatorsObj.assertCompare.getText();
         }
+        
 	}
 
