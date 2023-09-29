@@ -1,17 +1,10 @@
 package com.StepDefinations;
-
-<<<<<<< HEAD
-public class Search_Definition {
-=======
 import com.actions.SearchActions;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-public class Search_Definition {
+public class Search_Definition{
 SearchActions searchactions;
-	
 
 	@Given("User is on the Home Page")
 	public void user_is_on_the_home_page() {
@@ -39,8 +32,5 @@ SearchActions searchactions;
 	   System.out.println("Product not Displayed");
 	}
 
-
-
->>>>>>> e249c5eeca257b1ad942cde0f67ed978789d08d9
 
 }
