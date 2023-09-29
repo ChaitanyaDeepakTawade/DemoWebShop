@@ -4,7 +4,6 @@
  * @author Devansh M (Expleo Group)
  * since JDK17 9/25/2023
  */
-
 package com.actions;
 
 import org.openqa.selenium.support.PageFactory;
@@ -71,6 +70,5 @@ public class Categories_Camera_Actions {
         	
         	return cameraLocatorsObj.assertCompare.getText();
         }
-        
-	}
+}
 
