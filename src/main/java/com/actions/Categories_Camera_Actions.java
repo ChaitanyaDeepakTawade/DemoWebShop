@@ -12,11 +12,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.locators.CategoriesCameraLocators;
 import com.utils.HelperClass;
 
-public class CategoriesCameraActions {
+public class Categories_Camera_Actions {
      
 	CategoriesCameraLocators cameraLocatorsObj;
 	//Linking Action to Locators
-		public CategoriesCameraActions() {
+		public Categories_Camera_Actions() {
 
 			cameraLocatorsObj = new CategoriesCameraLocators();
 			PageFactory.initElements(HelperClass.getDriver(), cameraLocatorsObj);
