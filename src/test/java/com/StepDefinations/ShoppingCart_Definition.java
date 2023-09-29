@@ -1,8 +1,5 @@
 package com.StepDefinations;
 
-<<<<<<< HEAD
-public class ShoppingCart_Definition {
-=======
 import java.time.Duration;
 
 import com.actions.ShoppingCartActions;
@@ -68,6 +65,6 @@ public class ShoppingCart_Definition {
 	public void order_placed_successfully() {
 		System.out.println("Order placed Successfully");
 	}
->>>>>>> e249c5eeca257b1ad942cde0f67ed978789d08d9
+
 
 }
