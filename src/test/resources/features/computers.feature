@@ -1,3 +1,6 @@
+# Author: Aditya Ghorpade (Expleo Pune).
+# Sign: 24/09/2023
+# This feature file contains various test scenarios for a Webshop.
 Feature: Computers and Accessories
 
   Background:

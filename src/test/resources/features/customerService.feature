@@ -1,3 +1,6 @@
+# Author: Aditya Ghorpade (Expleo Pune).
+# Sign: 24/09/2023
+# This feature file is for verifying footer information links.
 @TC_CUSTOMER_SERVICE_10
 Feature: Customer Service Features
 
