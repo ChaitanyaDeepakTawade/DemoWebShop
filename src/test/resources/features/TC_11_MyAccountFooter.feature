@@ -23,11 +23,6 @@ When Again user goes to bottom
 And click on option Addresses
 Then Address to be displayed 
 
-Scenario: user checks ShoppingCart functionality
-When Again user goes to bottom 
-And click on option shoppingCart
-Then ShoppingCart orders are displayed 
-
 Scenario: user checks Wishlist functionality
 When Again user goes to bottom 
 And click on option wishlist

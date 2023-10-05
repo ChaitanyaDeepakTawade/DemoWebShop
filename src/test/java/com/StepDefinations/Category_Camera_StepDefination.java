@@ -9,20 +9,20 @@ package com.StepDefinations;
 
 import org.testng.Assert;
 
-import com.actions.CategoriesCameraActions;
+import com.actions.Categories_Camera_Actions;
 import com.utils.HelperClass;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class CategoryCameraStepDefinition {
+public class Category_Camera_StepDefination {
 	
-	CategoriesCameraActions objActions ;
+	Categories_Camera_Actions objActions ;
 	
 	@Given("User is on demo web shop main page")
 	public void user_is_on_demo_web_shop_main_page() {
-		objActions = new CategoriesCameraActions();
+		objActions = new Categories_Camera_Actions();
 	}
 
 	@When("user clicks on electronics tab")
