@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\ctawade\OneDrive - Expleo France\Documents\TestDemoWebShop\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\ctawade\AppData\Local\Temp\testng-eclipse-808159240\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,7 +92,180 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">31 methods, 2 failed,   29 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Registor Page&quot;, &quot;Validate Registor Page&quot;)">runScenario("Validate Registor Page", "Validate Registor Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;login with invalid credentials&quot;, &quot;Login Page Validatiion With Positive Negative credential&quot;)">runScenario("login with invalid credentials", "Login Page Validatiion With Positive Negative credential")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Shipping &amp; Returns Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">runScenario("Shipping & Returns Page opening", "Verifing footer informations links working or not")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Blog&quot;, &quot;Customer Service Features&quot;)">runScenario("Blog", "Customer Service Features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Search using the right keyword&quot;, &quot;To verify the Search functionality&quot;)">runScenario("Search using the right keyword", "To verify the Search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;News of Store&quot;, &quot;Customer Service Features&quot;)">runScenario("News of Store", "Customer Service Features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Display Twelve Accessories Products and Verify&quot;, &quot;Computers and Accessories&quot;)">runScenario("Display Twelve Accessories Products and Verify", "Computers and Accessories")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Send Green and Blue Sneaker to Friend via Email&quot;, &quot;Send Product to Friend via Email&quot;)">runScenario("Send Green and Blue Sneaker to Friend via Email", "Send Product to Friend via Email")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;user checks Option functionality&quot;, &quot;To check various functionalities of footer MyAccount&quot;)">runScenario("user checks Option functionality", "To check various functionalities of footer MyAccount")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;user checks Wishlist functionality&quot;, &quot;To check various functionalities of footer MyAccount&quot;)">runScenario("user checks Wishlist functionality", "To check various functionalities of footer MyAccount")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Compare Products List&quot;, &quot;Customer Service Features&quot;)">runScenario("Compare Products List", "Customer Service Features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Privacy Notice Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">runScenario("Privacy Notice Page opening", "Verifing footer informations links working or not")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Search a Product&quot;, &quot;Customer Service Features&quot;)">runScenario("Search a Product", "Customer Service Features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Recently Viewed Products&quot;, &quot;Customer Service Features&quot;)">runScenario("Recently Viewed Products", "Customer Service Features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Open Facebook page&quot;, &quot;Add to compare functionality for camera, photo section in electronics tab for...)">runScenario("Open Facebook page", "Add to compare functionality for camera, photo section in electronics tab for...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;New Products&quot;, &quot;Customer Service Features&quot;)">runScenario("New Products", "Customer Service Features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Search using invalid Keyword&quot;, &quot;To verify the Search functionality&quot;)">runScenario("Search using invalid Keyword", "To verify the Search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;login with valid credentials&quot;, &quot;Login Page Validatiion With Positive Negative credential&quot;)">runScenario("login with valid credentials", "Login Page Validatiion With Positive Negative credential")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Forget Password With Email&quot;, &quot;Forget Password using Email&quot;)">runScenario("Forget Password With Email", "Forget Password using Email")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Sort the Product in asscending order and Display as in grid view.&quot;, &quot;Category_BOOKS Page Sort the P...)">runScenario("Sort the Product in asscending order and Display as in grid view.", "Category_BOOKS Page Sort the P...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;user checks Orders functionality&quot;, &quot;To check various functionalities of footer MyAccount&quot;)">runScenario("user checks Orders functionality", "To check various functionalities of footer MyAccount")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;user checks MyAccount functionality&quot;, &quot;To check various functionalities of footer MyAccount&quot;)">runScenario("user checks MyAccount functionality", "To check various functionalities of footer MyAccount")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Sitemap Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">runScenario("Sitemap Page opening", "Verifing footer informations links working or not")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Add item to cart and place order&quot;, &quot;Check for Shopping Cart&quot;)">runScenario("Add item to cart and place order", "Check for Shopping Cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Contact us Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">runScenario("Contact us Page opening", "Verifing footer informations links working or not")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;About us Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">runScenario("About us Page opening", "Verifing footer informations links working or not")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Display Four Accessories Products and Verify&quot;, &quot;Computers and Accessories&quot;)">runScenario("Display Four Accessories Products and Verify", "Computers and Accessories")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Open Twitter page&quot;, &quot;Add to compare functionality for camera, photo section in electronics tab for ...)">runScenario("Open Twitter page", "Add to compare functionality for camera, photo section in electronics tab for ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Sort Desktop Products by Price Low to High&quot;, &quot;Computers and Accessories&quot;)">runScenario("Sort Desktop Products by Price Low to High", "Computers and Accessories")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to camera, photo section in electronics tab.&quot;, &quot;Add, display &amp; remove functionality for ca...)">runScenario("Navigate to camera, photo section in electronics tab.", "Add, display & remove functionality for ca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.Runner$CucumberRunnerTests" class="method navigator-link" hash-for-method="runScenario(&quot;Conditions of Use Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">runScenario("Conditions of Use Page opening", "Verifing footer informations links working or not")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,89 +276,728 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Runner.Runner$CucumberRunnerTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Registor Page&quot;, &quot;Validate Registor Page&quot;)">
+                  </a> <!-- runScenario("Validate Registor Page", "Validate Registor Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Registor Page","Validate Registor Page")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;result&quot;]&quot;}
+  (Session info: chrome=117.0.5938.150)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [680aceb75152a67df8d2942e75ba5893, findElement {using=xpath, value=//div[@class=&quot;result&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\ctawade\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50987/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 680aceb75152a67df8d2942e75ba5893
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy45.getText(Unknown Source)
+	at com.actions.RegisterPageActions.assertMessage(RegisterPageActions.java:84)
+	at com.StepDefinations.RegisterPageStepDefinition.validate_whether_user_is_registered_successfully(RegisterPageStepDefinition.java:55)
+	at com.StepDefinations.RegisterPageStepDefinition.fill_out_the_registration_form(RegisterPageStepDefinition.java:41)
+	at ✽.Fill out the registration form(file:///C:/Users/ctawade/OneDrive%20-%20Expleo%20France/Documents/TestDemoWebShop/src/test/resources/features/TC_1_Registration.feature:10)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;login with invalid credentials&quot;, &quot;Login Page Validatiion With Positive Negative credential&quot;)">
+                  </a> <!-- runScenario("login with invalid credentials", "Login Page Validatiion With Positive Negative credential") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("login with invalid credentials","Login Page Validatiion With Positive Negative credential")</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect [Login was unsuccessful. Please correct the errors and try again.] but found [Login was unsuccessful. Please correct the errors and try again.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1582)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2198)
+	at org.testng.Assert.assertNotEquals(Assert.java:2220)
+	at com.actions.LoginPageActions.AssertMessageNegative(LoginPageActions.java:69)
+	at com.StepDefinations.loginPageStepDefination.user_should_not_be_logged_in_successfully(loginPageStepDefination.java:71)
+	at ✽.User should not be logged in successfully(file:///C:/Users/ctawade/OneDrive%20-%20Expleo%20France/Documents/TestDemoWebShop/src/test/resources/features/TC_2_LoginPage.feature:25)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Runner.Runner$CucumberRunnerTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Shipping &amp; Returns Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">
+                  </a> <!-- runScenario("Shipping & Returns Page opening", "Verifing footer informations links working or not") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Shipping & Returns Page opening","Verifing footer informations links working or not")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Blog&quot;, &quot;Customer Service Features&quot;)">
+                  </a> <!-- runScenario("Blog", "Customer Service Features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Blog","Customer Service Features")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search using the right keyword&quot;, &quot;To verify the Search functionality&quot;)">
+                  </a> <!-- runScenario("Search using the right keyword", "To verify the Search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search using the right keyword","To verify the Search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;News of Store&quot;, &quot;Customer Service Features&quot;)">
+                  </a> <!-- runScenario("News of Store", "Customer Service Features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("News of Store","Customer Service Features")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Display Twelve Accessories Products and Verify&quot;, &quot;Computers and Accessories&quot;)">
+                  </a> <!-- runScenario("Display Twelve Accessories Products and Verify", "Computers and Accessories") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Display Twelve Accessories Products and Verify","Computers and Accessories")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Send Green and Blue Sneaker to Friend via Email&quot;, &quot;Send Product to Friend via Email&quot;)">
+                  </a> <!-- runScenario("Send Green and Blue Sneaker to Friend via Email", "Send Product to Friend via Email") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Send Green and Blue Sneaker to Friend via Email","Send Product to Friend via Email")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user checks Option functionality&quot;, &quot;To check various functionalities of footer MyAccount&quot;)">
+                  </a> <!-- runScenario("user checks Option functionality", "To check various functionalities of footer MyAccount") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user checks Option functionality","To check various functionalities of footer MyAccount")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user checks Wishlist functionality&quot;, &quot;To check various functionalities of footer MyAccount&quot;)">
+                  </a> <!-- runScenario("user checks Wishlist functionality", "To check various functionalities of footer MyAccount") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user checks Wishlist functionality","To check various functionalities of footer MyAccount")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Compare Products List&quot;, &quot;Customer Service Features&quot;)">
+                  </a> <!-- runScenario("Compare Products List", "Customer Service Features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Compare Products List","Customer Service Features")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Privacy Notice Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">
+                  </a> <!-- runScenario("Privacy Notice Page opening", "Verifing footer informations links working or not") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Privacy Notice Page opening","Verifing footer informations links working or not")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search a Product&quot;, &quot;Customer Service Features&quot;)">
+                  </a> <!-- runScenario("Search a Product", "Customer Service Features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search a Product","Customer Service Features")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Recently Viewed Products&quot;, &quot;Customer Service Features&quot;)">
+                  </a> <!-- runScenario("Recently Viewed Products", "Customer Service Features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Recently Viewed Products","Customer Service Features")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Open Facebook page&quot;, &quot;Add to compare functionality for camera, photo section in electronics tab for...)">
+                  </a> <!-- runScenario("Open Facebook page", "Add to compare functionality for camera, photo section in electronics tab for...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Open Facebook page","Add to compare functionality for camera, photo section in electronics tab for demowebshop ecommerce website.")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;New Products&quot;, &quot;Customer Service Features&quot;)">
+                  </a> <!-- runScenario("New Products", "Customer Service Features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("New Products","Customer Service Features")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search using invalid Keyword&quot;, &quot;To verify the Search functionality&quot;)">
+                  </a> <!-- runScenario("Search using invalid Keyword", "To verify the Search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search using invalid Keyword","To verify the Search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;login with valid credentials&quot;, &quot;Login Page Validatiion With Positive Negative credential&quot;)">
+                  </a> <!-- runScenario("login with valid credentials", "Login Page Validatiion With Positive Negative credential") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("login with valid credentials","Login Page Validatiion With Positive Negative credential")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Forget Password With Email&quot;, &quot;Forget Password using Email&quot;)">
+                  </a> <!-- runScenario("Forget Password With Email", "Forget Password using Email") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Forget Password With Email","Forget Password using Email")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sort the Product in asscending order and Display as in grid view.&quot;, &quot;Category_BOOKS Page Sort the P...)">
+                  </a> <!-- runScenario("Sort the Product in asscending order and Display as in grid view.", "Category_BOOKS Page Sort the P...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sort the Product in asscending order and Display as in grid view.","Category_BOOKS Page Sort the Product in asscending order and Display as a grid view.")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user checks Orders functionality&quot;, &quot;To check various functionalities of footer MyAccount&quot;)">
+                  </a> <!-- runScenario("user checks Orders functionality", "To check various functionalities of footer MyAccount") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user checks Orders functionality","To check various functionalities of footer MyAccount")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user checks MyAccount functionality&quot;, &quot;To check various functionalities of footer MyAccount&quot;)">
+                  </a> <!-- runScenario("user checks MyAccount functionality", "To check various functionalities of footer MyAccount") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user checks MyAccount functionality","To check various functionalities of footer MyAccount")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sitemap Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">
+                  </a> <!-- runScenario("Sitemap Page opening", "Verifing footer informations links working or not") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sitemap Page opening","Verifing footer informations links working or not")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add item to cart and place order&quot;, &quot;Check for Shopping Cart&quot;)">
+                  </a> <!-- runScenario("Add item to cart and place order", "Check for Shopping Cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add item to cart and place order","Check for Shopping Cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Contact us Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">
+                  </a> <!-- runScenario("Contact us Page opening", "Verifing footer informations links working or not") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Contact us Page opening","Verifing footer informations links working or not")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;About us Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">
+                  </a> <!-- runScenario("About us Page opening", "Verifing footer informations links working or not") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("About us Page opening","Verifing footer informations links working or not")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Display Four Accessories Products and Verify&quot;, &quot;Computers and Accessories&quot;)">
+                  </a> <!-- runScenario("Display Four Accessories Products and Verify", "Computers and Accessories") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Display Four Accessories Products and Verify","Computers and Accessories")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Open Twitter page&quot;, &quot;Add to compare functionality for camera, photo section in electronics tab for ...)">
+                  </a> <!-- runScenario("Open Twitter page", "Add to compare functionality for camera, photo section in electronics tab for ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Open Twitter page","Add to compare functionality for camera, photo section in electronics tab for demowebshop ecommerce website.")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sort Desktop Products by Price Low to High&quot;, &quot;Computers and Accessories&quot;)">
+                  </a> <!-- runScenario("Sort Desktop Products by Price Low to High", "Computers and Accessories") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sort Desktop Products by Price Low to High","Computers and Accessories")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Navigate to camera, photo section in electronics tab.&quot;, &quot;Add, display &amp; remove functionality for ca...)">
+                  </a> <!-- runScenario("Navigate to camera, photo section in electronics tab.", "Add, display & remove functionality for ca...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Navigate to camera, photo section in electronics tab.","Add, display & remove functionality for camera, photo section in electronics tab for demowebshop ecommerce website.")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Conditions of Use Page opening&quot;, &quot;Verifing footer informations links working or not&quot;)">
+                  </a> <!-- runScenario("Conditions of Use Page opening", "Verifing footer informations links working or not") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Conditions of Use Page opening","Verifing footer informations links working or not")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ctawade\OneDrive - Expleo France\Documents\TestDemoWebShop\testng.xml</span>
+            <span class="header-content">C:\Users\ctawade\AppData\Local\Temp\testng-eclipse-808159240\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.StepDefinations.Footer_Information_StepDefination&quot;/&gt;
+      &lt;class name=&quot;com.Runner.Runner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.addRows(31);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(0, 3, 16941);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(1, 3, 15818);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(2, 3, 14458);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(3, 3, 12816);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(4, 3, 12270);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(5, 3, 11934);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(6, 3, 11646);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(7, 3, 11455);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(8, 3, 11362);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(9, 3, 10942);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(10, 3, 10407);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(11, 3, 10255);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(12, 3, 9619);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(13, 3, 9175);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(14, 3, 9031);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(15, 3, 8662);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(16, 3, 8589);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(17, 3, 8505);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(18, 3, 8469);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(19, 3, 8439);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(20, 3, 8399);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(21, 3, 8329);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(22, 3, 8052);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(23, 3, 7891);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(24, 3, 7755);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(25, 3, 6965);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(26, 3, 6761);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(27, 3, 6547);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(28, 3, 6509);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(29, 3, 6040);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'com.Runner.Runner$CucumberRunnerTests')
+data.setCell(30, 3, 5958);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Runner.Runner$CucumberRunnerTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@f777d41)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search a Product", "Customer Service Features")</span>
+                <span class="method-start">1247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("News of Store", "Customer Service Features")</span>
+                <span class="method-start">12899 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Blog", "Customer Service Features")</span>
+                <span class="method-start">20794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Recently Viewed Products", "Customer Service Features")</span>
+                <span class="method-start">29196 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Compare Products List", "Customer Service Features")</span>
+                <span class="method-start">37528 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("New Products", "Customer Service Features")</span>
+                <span class="method-start">46035 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user checks MyAccount functionality", "To check various functionalities of footer MyAccount")</span>
+                <span class="method-start">54700 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user checks Orders functionality", "To check various functionalities of footer MyAccount")</span>
+                <span class="method-start">63294 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user checks Option functionality", "To check various functionalities of footer MyAccount")</span>
+                <span class="method-start">73551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user checks Wishlist functionality", "To check various functionalities of footer MyAccount")</span>
+                <span class="method-start">83962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Open Facebook page", "Add to compare functionality for camera, photo section in electronics tab for...)</span>
+                <span class="method-start">92995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Open Twitter page", "Add to compare functionality for camera, photo section in electronics tab for ...)</span>
+                <span class="method-start">104931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate Registor Page", "Validate Registor Page")</span>
+                <span class="method-start">112986 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Forget Password With Email", "Forget Password using Email")</span>
+                <span class="method-start">127448 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("login with valid credentials", "Login Page Validatiion With Positive Negative credential")</span>
+                <span class="method-start">137069 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("login with invalid credentials", "Login Page Validatiion With Positive Negative credential")</span>
+                <span class="method-start">144827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search using the right keyword", "To verify the Search functionality")</span>
+                <span class="method-start">151794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search using invalid Keyword", "To verify the Search functionality")</span>
+                <span class="method-start">160235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sort the Product in asscending order and Display as in grid view.", "Category_BOOKS Page Sort the P...)</span>
+                <span class="method-start">168707 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Navigate to camera, photo section in electronics tab.", "Add, display & remove functionality for ca...)</span>
+                <span class="method-start">180071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sort Desktop Products by Price Low to High", "Computers and Accessories")</span>
+                <span class="method-start">197016 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Display Four Accessories Products and Verify", "Computers and Accessories")</span>
+                <span class="method-start">208474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Display Twelve Accessories Products and Verify", "Computers and Accessories")</span>
+                <span class="method-start">219420 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Send Green and Blue Sneaker to Friend via Email", "Send Product to Friend via Email")</span>
+                <span class="method-start">232239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add item to cart and place order", "Check for Shopping Cart")</span>
+                <span class="method-start">244513 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sitemap Page opening", "Verifing footer informations links working or not")</span>
+                <span class="method-start">260333 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Shipping & Returns Page opening", "Verifing footer informations links working or not")</span>
+                <span class="method-start">267095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Privacy Notice Page opening", "Verifing footer informations links working or not")</span>
+                <span class="method-start">273137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Conditions of Use Page opening", "Verifing footer informations links working or not")</span>
+                <span class="method-start">279097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("About us Page opening", "Verifing footer informations links working or not")</span>
+                <span class="method-start">285645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Contact us Page opening", "Verifing footer informations links working or not")</span>
+                <span class="method-start">292157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">301339 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

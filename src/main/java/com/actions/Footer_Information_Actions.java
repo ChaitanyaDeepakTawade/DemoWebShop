@@ -1,14 +1,18 @@
 package com.actions;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -27,7 +31,7 @@ public class Footer_Information_Actions {
 	Footer_Information_Locators objFooterInfoLocators;
 	Logger log;
 	String currentURL ; // store current url of driver for validate right page is open or not
-	
+	WebDriverWait wait;
 	//Validate Sitemap Page is Opened
 	public Footer_Information_Actions(){
 		log = LogManager.getLogger(Footer_Information_Actions.class);
@@ -38,6 +42,9 @@ public class Footer_Information_Actions {
 	}
 	public void click_Sitemap() {
 		log.info("------------Openeing Sitemap----------------");
+		
+		wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sitemap")));
 		objFooterInfoLocators.Sitmap.click();
 		
 		
@@ -60,6 +67,8 @@ public class Footer_Information_Actions {
 	//Validate Shipping And Returns Page is Opened
 	public void click_ShippingAndReturns() {
 		log.info("------------Openeing Shipping And Returns----------------");
+		wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Shipping & Returns")));
 		objFooterInfoLocators.ShippingAndReturns.click();
 		
 	}
@@ -81,6 +90,8 @@ public class Footer_Information_Actions {
 	//Validate Privacy Notice Page Opened
     public void click_PrivacyNotice() {
     	log.info("------------Openeing Privacy Notice----------------");
+    	wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Privacy Notice")));
 		objFooterInfoLocators.PrivacyNotice.click();
 		
 	}
@@ -100,6 +111,8 @@ public class Footer_Information_Actions {
     //Validate About Us Page is Opened
     public void click_AboutUs() {
     	log.info("------------Openeing About Us----------------");
+    	wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+    	wait.until(ExpectedConditions.elementToBeClickable(By.linkText("About us")));
 		objFooterInfoLocators.AboutUs.click();
 		
 	}
@@ -118,6 +131,8 @@ public class Footer_Information_Actions {
 	//Validate ContactUs Page is Opened and data is submitted sucessfully
     public void click_ContactUs() {
     	log.info("------------Openeing Contact Us----------------");
+    	wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+    	wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Contact us")));
 		objFooterInfoLocators.ContactUs.click();
 		
 	}
